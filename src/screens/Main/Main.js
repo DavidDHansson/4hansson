@@ -9,7 +9,7 @@ export default function Main() {
     return (
         <div style={{display: "flex", flexDirection: "column"}}>
             <div className="par">
-                <div className="el1"> <p className="text"> David Hansson </p> </div>
+                <div className="el1"> <p className="text"> David D. Hansson </p> </div>
                 <div className="el2">
                     <Particles />
                 </div>
