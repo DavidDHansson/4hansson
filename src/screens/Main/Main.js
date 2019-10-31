@@ -9,12 +9,12 @@ export default function Main() {
     return (
         <div style={{display: "flex", flexDirection: "column"}}>
             <div className="par">
-                <div className="el1"> <p className="text"> David D. Hansson </p> </div>
+                <div className="el1"> <p className="text"> David Hansson </p> </div>
                 <div className="el2">
                     <Particles />
                 </div>
             </div>
-            <div style={{padding: 250}}></div>
+            <div style={{padding: 200}}></div>
             <Bid style={{backgroundColor: "blue", height: 400}} />
             <Bid style={{backgroundColor: "green", height: 500}} />
         </div>
