@@ -3,7 +3,7 @@
 
 Portfolio hjemmeside lavet af David Hansson <br>
 
-[Projektet](https://4hansson.dk) kan tjekkes ud her.
+[Projektet](http://4hansson.dk) kan tjekkes ud her.
 
 ## Stack
 
