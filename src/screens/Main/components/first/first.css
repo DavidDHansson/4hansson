@@ -1,0 +1,36 @@
+.el1 {
+    position: absolute;
+    right: 50%;
+    top: 30%;
+    z-index: 2;
+    margin: auto;
+    text-align: center;
+}
+
+.el2 {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.navn {
+    transition: 2s;
+    cursor: pointer;
+    font-size: 80px;
+    color: #538b91;
+}
+
+.navn:hover {
+    color: black;
+}
+
+.text {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 69px;
+    color: #92dce5;
+}

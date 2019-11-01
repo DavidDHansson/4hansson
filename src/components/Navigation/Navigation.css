@@ -1,46 +1,42 @@
-
-.nav {
-    width: 100%;
-    justify-content: center;
+.navParent {
     transition: 0.5s;
-    display: flex;
-    background-color: #828a95;
-    position: fixed;
-    z-index: 3;
-    overflow: hidden;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5;
-    border-bottom: 1px solid rgba(201, 240, 255, 0.4);
-}
-
-.nav-text {
-    width: 100%;
-    justify-content: space-around;
-    padding: 1rem;
     display: flex;
     flex-direction: row;
-    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  */
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    justify-content: space-around;
+    z-index: 3;
+    position: fixed;
+    overflow: hidden;
+    height: 6%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
-.nav-text, h1 {
-    font-size: 1.5rem;
+.scroll {
+    background-color: white;
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    height: 8%;
+}
+
+.navDivChild {
+    border: 1px solid rgba(0, 0, 0, 0);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navPChild {
+    font-size: 26px;
     transition: 0.5s;
-    color: #c9f0ff;
-}
-
-.nav-text h1:hover {
-    color: #92dce5;
     cursor: pointer;
-    text-shadow: 0 0 2px #c9f0ff, 0 0 3px #c9f0ff
 }
 
-.scrolled {
-    background-color: #282c34;
-    border-bottom: 1px solid #282c34;
+.navPChild:hover {
+    transform: translateY(-20%);
 }
 
 a {
-    color: white;
+    color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
 }

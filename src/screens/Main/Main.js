@@ -1,22 +1,20 @@
 import React from "react";
 
 import "./Main.css";
-import Bid from "./components/Bid";
-import Particles from "./components/Particles";
+import Bid from "./../../components/Bid/Bid";
+import First from "./components/first/first";
 
-export default function Main() {
+export default class Main extends React.Component {
 
-    return (
-        <div style={{display: "flex", flexDirection: "column"}}>
-            <div className="par">
-                <div className="el1"> <p className="text"> David D. Hansson </p> </div>
-                <div className="el2">
-                    <Particles />
-                </div>
+    render() {
+        return (
+            <div style={{ display: "flex", flexDirection: "column" }}>
+                <First />
+                <div style={{ paddingTop: 600 }}></div>
+                <Bid style={{ backgroundColor: "rgb(230, 232, 236)", height: 800 }} />
+                <Bid style={{ backgroundColor: "rgb(245, 246, 248)", height: 500 }} />
+                <Bid style={{ backgroundColor: "rgb(22, 30, 39)", height: 300 }} />
             </div>
-            <div style={{padding: 250}}></div>
-            <Bid style={{backgroundColor: "blue", height: 400}} />
-            <Bid style={{backgroundColor: "green", height: 500}} />
-        </div>
-    );
+        );
+    }
 }

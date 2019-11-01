@@ -9,7 +9,6 @@ export default class Bid extends React.Component {
                 backgroundColor: this.props.style.backgroundColor,
                 float: "left"
             }}>
-
             </div>
         );
     }

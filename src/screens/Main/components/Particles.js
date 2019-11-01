@@ -6,7 +6,7 @@ export default class Parti extends React.Component {
         return(
             <div>
                 <Particles
-                    height={500}
+                    height={600}
                     params={{
                         particles: {
                             number: {
@@ -17,7 +17,7 @@ export default class Parti extends React.Component {
                                 }
                             },
                             color: {
-                                value: "#ffffff"
+                                value: "#c9f0ff"
                             },
                             shape: {
                                 type: "circle",
