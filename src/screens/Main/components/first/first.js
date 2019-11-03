@@ -1,8 +1,10 @@
 import React from "react";
 
-import Particles from "./../Particles";
+import Particles from "./Particles";
 import "./first.css";
 import Fire from "./fire";
+
+import Pulse from 'react-reveal/Pulse';
 
 export default class First extends React.Component {
     constructor(props) {
@@ -18,11 +20,11 @@ export default class First extends React.Component {
         const el = document.getElementsByClassName("navn");
 
         for (let i = 0; i < el.length; i++) {
-            
+
             el[i].addEventListener("mouseenter", () => {
                 this.setState({
                     navnHover: true,
-                    timer: setTimeout(() => { this.navnEvent(i); }, 1600)
+                    timer: setTimeout(() => { this.navnEvent(i); }, 800)
                 });
             });
 
@@ -39,8 +41,8 @@ export default class First extends React.Component {
         const el = document.getElementsByClassName("navn");
 
         for (let i = 0; i < el.length; i++) {
-            el[i].removeEventListener("mouseenter", () => {}, true);
-            el[i].removeEventListener("mouseleave", () => {}, true);
+            el[i].removeEventListener("mouseenter", () => { }, true);
+            el[i].removeEventListener("mouseleave", () => { }, true);
         }
     }
 
@@ -49,24 +51,30 @@ export default class First extends React.Component {
             fire: el
         });
 
-        setTimeout(() => { this.setState({ fire: 10 })}, 2000);
+        setTimeout(() => { this.setState({ fire: 10 }) }, 800);
     }
 
     render() {
         return (
-            <div className="par" id="navnPar">
-                <p className="text el1">
-                    <span class="navn">D</span>
-                    avid<span> </span>
+            <div>
+                <div className="par" id="navnPar">
+
+                <Pulse>
+                    <div className="text el1">
+                        <span class="navn">D</span>
+                        avid<span> </span>
                         <span class="navn">H</span>
-                    ansson
-                    </p>
+                        ansson
+                    </div>
+                </Pulse>
 
-                <Fire go={this.state.fire}/>
+                    <Fire go={this.state.fire} />
 
-                <div className="el2">
-                    <Particles />
+                    <div className="el2">
+                        <Particles />
+                    </div>
                 </div>
+                <div style={{ paddingTop: 600 }}></div>
             </div>
         );
     }

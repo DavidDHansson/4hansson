@@ -15,7 +15,7 @@
 }
 
 .navn {
-    transition: 2s;
+    transition: 1s;
     cursor: pointer;
     font-size: 80px;
     color: #538b91;

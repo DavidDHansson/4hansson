@@ -19,9 +19,9 @@ export default class Navigation extends React.Component {
     render() {
         return (
             <div className="navParent" id="nav">
-                <Link to="/" exact> <div className="navDivChild"> <p className="navPChild">Hjem</p> </div> </Link>
-                <Link to="/projekt"> <div className="navDivChild"> <p className="navPChild">Projekter</p> </div> </Link>
-                <Link to="/kontakt"> <div className="navDivChild"> <p className="navPChild">Kontakt</p> </div> </Link>
+                <Link className="navPChild" to="/" exact>  <div className="navDivChild"> Hjem      </div> </Link>
+                <Link className="navPChild" to="/projekt"> <div className="navDivChild"> Projekter </div> </Link>
+                <Link className="navPChild" to="/kontakt"> <div className="navDivChild"> Kontakt   </div> </Link>
             </div>
         );
     }
