@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 //screens
-import Main from "./screens/Main/Main";
-import Projekt from "./screens/Projekt/Projekt";
-import Kontakt from "./screens/Kontakt/Kontakt";
+import Home from "./screens/Home/Home";
+import Projects from "./screens/Projects/Projects";
+import Contact from "./screens/Contact/Contact";
 
 import Navigation from "./components/Navigation/Navigation";
 import { LangProvider } from './components/LangContext/LangContext';
@@ -19,9 +19,11 @@ class App extends React.Component {
                 <Router>
                     <Navigation changeLang={this.changeLang}/>
                     <Switch>
-                        <Route path="/" exact component={Main} />
-                        <Route path="/projekt" component={Projekt} />
-                        <Route path="/kontakt" component={Kontakt} />
+                        <Route path="/" exact component={Home} />
+                        <Route path="/Home" component={Home} />
+                        <Route path="/Projects" component={Projects} />
+                        <Route path="/Contact" component={Contact} />
+                        <Route component={Home}/>
                     </Switch>
                 </Router>
             </LangProvider>
