@@ -1,0 +1,16 @@
+.flagParent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.flagChild {
+    transition: 0.5s;
+    font-size: 40px;
+}
+
+.flagChild:hover {
+    transform: translateY(-10%);
+    cursor: pointer;
+}

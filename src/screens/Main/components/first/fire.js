@@ -18,11 +18,11 @@ export default function Fire(props) {
         parentNode: document.getElementById("navnPar")
     };
 
-    if(props.go == 0 ) {
+    if(props.go === 0 ) {
         return ( <Fireworks {...fx} {... {colors: ['#282c34', '#92dce5', '#c9f0ff', "#f5f6f8", "#e6e8ec"]}} /> );
     }
 
-    if(props.go == 1) {
+    if(props.go === 1) {
         return ( <Fireworks {...fx} {... {colors: ['#e6e8ec', '#282c34', '#92dce5', "#c9f0ff", "#f5f6f8"]}}/> );
     }
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./second.css";
-import StartTitel from "./titel";
+import StartTitel from "./components/titel";
 
 export default class Second extends React.Component {
 

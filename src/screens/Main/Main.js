@@ -6,6 +6,7 @@ import Bid from "./../../components/Bid/Bid";
 // Screeen components
 import First  from "./components/first/first";
 import Second from "./components/second/second";
+import Footer from "./../../components/Footer/Footer";
 
 export default class Main extends React.Component {
 
@@ -15,7 +16,7 @@ export default class Main extends React.Component {
                 <First />
                 <Second />
                 <Bid style={{ backgroundColor: "rgb(245, 246, 248)", height: 500 }} />
-                <Bid style={{ backgroundColor: "rgb(22, 30, 39)", height: 300 }} />
+                <Footer />
             </div>
         );
     }

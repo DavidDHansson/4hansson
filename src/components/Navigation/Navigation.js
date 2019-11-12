@@ -1,28 +1,32 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 
 import "./navigation.css";
 import { Link } from "react-router-dom";
 
-export default class Navigation extends React.Component {
-    componentDidMount() {
+import { LangContext } from "./../LangContext/LangContext";
+import trans from "./../../constants/lang";
+
+export default function Navigation() {
+
+    const [ lang ] = useContext(LangContext);
+
+    useEffect(() => {
         window.addEventListener("scroll", () => {
             const top = window.scrollY > 600;
             const nav = document.getElementById("nav");
             top ? nav.classList.add("scroll") : nav.classList.remove("scroll");
         });
-    }
 
-    componentWillUnmount() {
-        window.removeEventListener("scroll");
-    }
+        return () => {
+            window.removeEventListener("scroll");    
+        }
+    }, []);
 
-    render() {
-        return (
-            <div className="navParent" id="nav">
-                <Link className="navPChild" to="/" exact>  <div className="navDivChild"> Hjem      </div> </Link>
-                <Link className="navPChild" to="/projekt"> <div className="navDivChild"> Projekter </div> </Link>
-                <Link className="navPChild" to="/kontakt"> <div className="navDivChild"> Kontakt   </div> </Link>
-            </div>
-        );
-    }
+    return (
+        <div className="navParent" id="nav">
+            <Link className="navPChild" to="/" exact>  <div className="navDivChild"> {lang === trans.lang[0] && (trans.nav[0][0])} {lang === trans.lang[1] && (trans.nav[1][0])} </div> </Link>
+            <Link className="navPChild" to="/projekt"> <div className="navDivChild"> {lang === trans.lang[0] && (trans.nav[0][1])} {lang === trans.lang[1] && (trans.nav[1][1])} </div> </Link>
+            <Link className="navPChild" to="/kontakt"> <div className="navDivChild"> {lang === trans.lang[0] && (trans.nav[0][2])} {lang === trans.lang[1] && (trans.nav[1][2])} </div> </Link>
+        </div>
+    );
 }

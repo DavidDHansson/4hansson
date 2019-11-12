@@ -2,7 +2,7 @@ import React from "react";
 
 export default class Bid extends React.Component {
     render() {
-        return(
+        return (
             <div style={{ 
                 height: this.props.style.height,
                 width: "100%",

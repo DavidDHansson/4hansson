@@ -49,7 +49,7 @@ export default class Parti extends React.Component {
                                 random: true,
                                 anim: {
                                     enable: false,
-                                    speed: 40,
+                                    speed: 10,
                                     size_min: 0.1,
                                     sync: false
                                 }
@@ -85,7 +85,7 @@ export default class Parti extends React.Component {
                                 },
                                 onclick: {
                                     enable: true,
-                                    mode: "push"
+                                    mode: "remove"
                                 },
                                 resize: true
                             },

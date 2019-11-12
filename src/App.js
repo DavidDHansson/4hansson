@@ -8,18 +8,25 @@ import Projekt from "./screens/Projekt/Projekt";
 import Kontakt from "./screens/Kontakt/Kontakt";
 
 import Navigation from "./components/Navigation/Navigation";
+import { LangProvider } from './components/LangContext/LangContext';
 
-function App() {
-    return (
-        <Router>
-            <Navigation />
-            <Switch>
-                <Route path="/" exact component={Main}/>
-                <Route path="/projekt" component={Projekt}/>
-                <Route path="/kontakt" component={Kontakt}/>
-            </Switch>
-        </Router>
-    );
+//https://reactjs.org/docs/context.html#dynamic-context
+
+class App extends React.Component {
+    render() {
+        return (
+            <LangProvider>
+                <Router>
+                    <Navigation changeLang={this.changeLang}/>
+                    <Switch>
+                        <Route path="/" exact component={Main} />
+                        <Route path="/projekt" component={Projekt} />
+                        <Route path="/kontakt" component={Kontakt} />
+                    </Switch>
+                </Router>
+            </LangProvider>
+        );
+    }
 }
 
 export default App;

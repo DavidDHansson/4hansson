@@ -1,0 +1,14 @@
+{
+    "lang": ["en", "dk"],
+    "nav": [[
+        "Home",
+        "Projects",
+        "Contact"
+    ],[
+        "Hjem",
+        "Projekter",
+        "Kontakt"
+    ]],
+    "startTitel": ["Hello, Welcome", "Hej, Velkommen"],
+    "langInfo": ["Choose Language", "Vælg Sprog"]
+}
