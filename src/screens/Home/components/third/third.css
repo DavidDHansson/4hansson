@@ -1,0 +1,43 @@
+.thirdTop {
+    background-color: rgb(246, 246, 248);
+    height: 620px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.thirdParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.thirdGraph {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+.thirdGraphChild {
+    height: 10px;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,77,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,77,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,77,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#004dff",GradientType=1);
+}
+
+.thirdMiniPar {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+@keyframes thirdjsAni          { from { width: 0%; } to { width: 100%; } }
+@keyframes thirdReactAni       { from { width: 0%; } to { width: 90%; } }
+@keyframes thirdReactNativeAni { from { width: 0%; } to { width: 95%; } }
+@keyframes thirdcssAni         { from { width: 0%; } to { width: 65%; } }
+@keyframes thirdphpAni         { from { width: 0%; } to { width: 70%; } }
+@keyframes thirdsqlAni         { from { width: 0%; } to { width: 40%; } }

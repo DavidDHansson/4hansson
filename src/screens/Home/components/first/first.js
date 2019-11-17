@@ -17,7 +17,7 @@ export default class First extends React.Component {
     }
 
     componentDidMount() {
-        const el = document.getElementsByClassName("navn");
+        const el = document.getElementsByClassName("navNavn");
 
         for (let i = 0; i < el.length; i++) {
 
@@ -38,7 +38,7 @@ export default class First extends React.Component {
     }
 
     componentWillUnmount() {
-        const el = document.getElementsByClassName("navn");
+        const el = document.getElementsByClassName("NavNavn");
 
         for (let i = 0; i < el.length; i++) {
             el[i].removeEventListener("mouseenter", () => { }, true);
@@ -57,23 +57,21 @@ export default class First extends React.Component {
     render() {
         return (
             <div>
-                <div className="par" id="navnPar">
 
                 <Pulse>
-                    <div className="text el1">
-                        <span class="navn">D</span>
+                    <div className="navText navEl1">
+                        <span class="navNavn">D</span>
                         avid<span> </span>
-                        <span class="navn">H</span>
+                        <span class="navNavn">H</span>
                         ansson
                     </div>
                 </Pulse>
 
                     <Fire go={this.state.fire} />
 
-                    <div className="el2">
+                    <div className="navEl2">
                         <Particles />
                     </div>
-                </div>
                 <div style={{ paddingTop: 600 }}></div>
             </div>
         );

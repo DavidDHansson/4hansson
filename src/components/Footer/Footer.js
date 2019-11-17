@@ -11,17 +11,17 @@ export default function Footer() {
     const d = new Date();
 
     return (
-        <div className="parent">
-            <div className="child">
+        <div className="footerParent">
+            <div className="footerChild">
                 <p>
                     {lang === trans.lang[0] && (trans.langInfo[0])}
                     {lang === trans.lang[1] && (trans.langInfo[1])}
                 </p>
                 <LangChange />
             </div>
-            <div className="child">
+            <div className="footerChild">
                 <p>Copyright © {d.getFullYear()} 4hansson.dk - All rights reserved</p>
-                <p>David Hansson - Hansson.d.david@gmail.com</p>
+                <p>David Hansson - <a href="mailto:Hansson.d.david@gmail.com" style={{ color: "white" }} >Hansson.d.david@gmail.com</a></p>
             </div>
         </div>
     );

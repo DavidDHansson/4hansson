@@ -1,4 +1,4 @@
-.el1 {
+.navEl1 {
     position: absolute;
     right: 50%;
     top: 30%;
@@ -7,25 +7,25 @@
     text-align: center;
 }
 
-.el2 {
+.navEl2 {
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 100%;
 }
 
-.navn {
+.navNavn {
     transition: 1s;
     cursor: pointer;
     font-size: 80px;
     color: #538b91;
 }
 
-.navn:hover {
+.navNavn:hover {
     color: black;
 }
 
-.text {
+.navText {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-style: normal;
     font-variant: normal;
