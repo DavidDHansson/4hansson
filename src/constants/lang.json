@@ -10,5 +10,10 @@
         "Kontakt"
     ]],
     "startTitel": ["Hello, Welcome", "Hej, Velkommen"],
+    "startTitelBes": [
+        "My name is David Hansson, and I’m 17 years old. My everyday life consists of school, where I’m currently in my second year, under the branch HTX. We have a focus on programming and technology on my line, which has always been one of my big passions since a young age. ",
+        "Mit navn er David Hansson og jeg er 17 år gammel. Til dagligt går jeg i 2.g, under grenen HTX. På min linje har vi fokus på programmering og teknologi, hvilket har været en af mine store passioner siden en ung alder."
+    ],
+    "skillsInfo": ["What can I do?", "Hvad kan jeg?"],
     "langInfo": ["Choose Language", "Vælg Sprog"]
 }

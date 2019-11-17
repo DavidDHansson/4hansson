@@ -3,6 +3,8 @@ import Reveal from "react-reveal/Reveal";
 
 import "./third.css";
 
+import SkillsInfo from "./components/SkillsInfo";
+
 export default class Third extends React.Component {
     constructor(props) {
         super(props);
@@ -26,12 +28,12 @@ export default class Third extends React.Component {
                 <Reveal onReveal={() => this.setState({ display: true })}>
                     <div className="thirdParent">
                         <div>
-                            <p>THIRD</p>
+                            <SkillsInfo />
                         </div>
                         <div className="thirdGraph">
                             {this.state.display && (this.state.lang.sort((a, b) => b.width - a.width).map((e) => 
                                 <div className="thirdMiniPar">
-                                    <p style={{ color: `rgba(0, 0, 0, ${e.width / 100})`, fontSize: "16px" }} >{e.titel}</p>
+                                    <p style={{ color: `rgba(0, 0, 0, ${e.width / 100})` }} >{e.titel}</p>
                                     <div className="thirdGraphChild" style={{ animation: `${e.keyFrame} ${this.state.tid}s`, width: `${e.width}%` }}></div>
                                 </div>
                             ))}

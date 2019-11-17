@@ -2,11 +2,15 @@ import React from "react";
 import Particles from "react-particles-js";
 
 export default class Parti extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
     render() {
         return(
             <div>
                 <Particles
-                    height={600}
+                    height={ window.innerHeight - this.props.size }
                     params={{
                         particles: {
                             number: {

@@ -13,6 +13,7 @@ export default class First extends React.Component {
             navnHover: false,
             timer: "",
             fire: 10,
+            size: 100
         }
     }
 
@@ -70,9 +71,9 @@ export default class First extends React.Component {
                     <Fire go={this.state.fire} />
 
                     <div className="navEl2">
-                        <Particles />
+                        <Particles size={this.state.size}/>
                     </div>
-                <div style={{ paddingTop: 600 }}></div>
+                <div style={{ paddingTop: window.innerHeight - this.state.size }}></div>
             </div>
         );
     }
