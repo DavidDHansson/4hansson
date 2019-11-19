@@ -11,14 +11,14 @@ export default class Third extends React.Component {
         this.state = {
             lang: [
                 { titel: "JavaScript", keyFrame: "thirdjsAni", width: 100 },
-                { titel: "React.JS", keyFrame: "thirdReactAni", width: 90 },
+                { titel: "React", keyFrame: "thirdReactAni", width: 90 },
                 { titel: "React Native", keyFrame: "thirdReactNativeAni", width: 95 },
                 { titel: "CSS", keyFrame: "thirdcssAni", width: 65 },
-                { titel: "PHP", keyFrame: "thirdphpAni", width: 70 },
-                { titel: "MySQL", keyFrame: "thirdsqlAni", width: 40 }
+                { titel: "PHP/MySQL", keyFrame: "thirdphpAni", width: 70 }
             ],
             display: false,
-            tid: 2
+            tid: 2,
+            aktiv: null
         }
     }
 
@@ -29,12 +29,22 @@ export default class Third extends React.Component {
                     <div className="thirdParent">
                         <div>
                             <SkillsInfo />
+                            <p style={{fontSize:25}}>{this.state.aktiv != null && (this.state.aktiv)}</p>
                         </div>
                         <div className="thirdGraph">
-                            {this.state.display && (this.state.lang.sort((a, b) => b.width - a.width).map((e) => 
-                                <div className="thirdMiniPar">
+                            {this.state.display && (this.state.lang.sort((a, b) => b.width - a.width).map((e, index) =>
+                                <div 
+                                    className="thirdMiniPar"
+                                    onMouseEnter={() => this.setState({ aktiv: index })}
+                                    onMouseLeave={() => this.setState({ aktiv: null })}
+                                >
                                     <p style={{ color: `rgba(0, 0, 0, ${e.width / 100})` }} >{e.titel}</p>
-                                    <div className="thirdGraphChild" style={{ animation: `${e.keyFrame} ${this.state.tid}s`, width: `${e.width}%` }}></div>
+                                    <div
+                                        className="thirdGraphChild"
+                                        style={{
+                                            animation: `${e.keyFrame} ${this.state.tid}s`,
+                                            width: `${e.width}%`
+                                        }}></div>
                                 </div>
                             ))}
                         </div>

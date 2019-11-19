@@ -20,10 +20,9 @@ class App extends React.Component {
                     <Navigation changeLang={this.changeLang}/>
                     <Switch>
                         <Route path="/" exact component={Home} />
-                        <Route path="/Home" component={Home} />
-                        <Route path="/Projects" component={Projects} />
-                        <Route path="/Contact" component={Contact} />
-                        <Route component={Home}/>
+                        <Route path="/home" component={Home} />
+                        <Route path="/projects" component={Projects} />
+                        <Route path="/contact" component={Contact} />
                     </Switch>
                 </Router>
             </LangProvider>

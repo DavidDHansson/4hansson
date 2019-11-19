@@ -12,6 +12,6 @@ Portfolio hjemmeside lavet af David Hansson <br>
 - React.js
     - Particle.js
     - React Router
-- PHP HTTP request
-- MySQL database til user tracking
+- 
+- 
 

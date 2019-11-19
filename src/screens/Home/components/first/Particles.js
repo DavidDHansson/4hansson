@@ -2,9 +2,6 @@ import React from "react";
 import Particles from "react-particles-js";
 
 export default class Parti extends React.Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         return(
@@ -89,7 +86,8 @@ export default class Parti extends React.Component {
                                 },
                                 onclick: {
                                     enable: true,
-                                    mode: "remove"
+                                    // mode: "remove"
+                                    mode: "push"
                                 },
                                 resize: true
                             },
@@ -111,7 +109,7 @@ export default class Parti extends React.Component {
                                     distance: 100,
                                 },
                                 push: {
-                                    particles_nb: 4
+                                    particles_nb: 1
                                 },
                                 remove: {
                                     particles_nb: 2

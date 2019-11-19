@@ -8,7 +8,7 @@ import trans from "./../../constants/lang";
 
 export default function Navigation() {
 
-    const [ lang ] = useContext(LangContext);
+    const [lang] = useContext(LangContext);
 
     useEffect(() => {
         window.addEventListener("scroll", () => {

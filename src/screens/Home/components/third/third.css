@@ -33,6 +33,12 @@
     display: flex;
     flex-direction: column;
     margin: 20px;
+    border: 2px solid rgb(246, 246, 248);
+    transition: 0.4s linear;
+}
+
+.thirdMiniPar:hover {
+    transform: translateY(-5px);
 }
 
 @keyframes thirdjsAni          { from { width: 0%; } to { width: 100%; } }
@@ -40,4 +46,3 @@
 @keyframes thirdReactNativeAni { from { width: 0%; } to { width: 95%; } }
 @keyframes thirdcssAni         { from { width: 0%; } to { width: 65%; } }
 @keyframes thirdphpAni         { from { width: 0%; } to { width: 70%; } }
-@keyframes thirdsqlAni         { from { width: 0%; } to { width: 40%; } }
