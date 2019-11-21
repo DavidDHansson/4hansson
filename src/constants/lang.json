@@ -15,5 +15,9 @@
         "Mit navn er David Hansson og jeg er 17 år gammel. Til dagligt går jeg i 2.g, under grenen HTX. På min linje har vi fokus på programmering og teknologi, hvilket har været en af mine store passioner siden en ung alder."
     ],
     "skillsInfo": ["What can I do?", "Hvad kan jeg?"],
+    "skillsBes": [
+        ["JavaScript yes", "RN indeed", "React yes", "PHP wow", "Styling yes"],
+        [" idk ", "RN wow wow dansk", "React jaja", "PHP det gammelt", "Css wow en fleks boks"]
+    ],
     "langInfo": ["Choose Language", "Vælg Sprog"]
 }

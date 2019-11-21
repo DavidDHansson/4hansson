@@ -34,11 +34,11 @@
     flex-direction: column;
     margin: 20px;
     border: 2px solid rgb(246, 246, 248);
-    transition: 0.4s linear;
+    transition: 0.3s linear;
 }
 
 .thirdMiniPar:hover {
-    transform: translateY(-5px);
+    transform: translateY(-12px);
 }
 
 @keyframes thirdjsAni          { from { width: 0%; } to { width: 100%; } }

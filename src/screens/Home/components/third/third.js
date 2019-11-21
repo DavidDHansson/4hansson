@@ -5,6 +5,7 @@ import "./third.css";
 
 import SkillsInfo from "./components/SkillsInfo";
 
+
 export default class Third extends React.Component {
     constructor(props) {
         super(props);
@@ -28,12 +29,11 @@ export default class Third extends React.Component {
                 <Reveal onReveal={() => this.setState({ display: true })}>
                     <div className="thirdParent">
                         <div>
-                            <SkillsInfo />
-                            <p style={{fontSize:25}}>{this.state.aktiv != null && (this.state.aktiv)}</p>
+                            <SkillsInfo aktiv={this.state.aktiv} rating={this.state.aktiv != null ? this.state.lang[this.state.aktiv].width : ""}/>
                         </div>
                         <div className="thirdGraph">
                             {this.state.display && (this.state.lang.sort((a, b) => b.width - a.width).map((e, index) =>
-                                <div 
+                                <div
                                     className="thirdMiniPar"
                                     onMouseEnter={() => this.setState({ aktiv: index })}
                                     onMouseLeave={() => this.setState({ aktiv: null })}
