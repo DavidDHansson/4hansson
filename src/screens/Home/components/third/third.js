@@ -11,11 +11,10 @@ export default class Third extends React.Component {
         super(props);
         this.state = {
             lang: [
-                { titel: "JavaScript", keyFrame: "thirdjsAni", width: 100 },
-                { titel: "React", keyFrame: "thirdReactAni", width: 90 },
-                { titel: "React Native", keyFrame: "thirdReactNativeAni", width: 95 },
-                { titel: "CSS", keyFrame: "thirdcssAni", width: 65 },
-                { titel: "PHP/MySQL", keyFrame: "thirdphpAni", width: 70 }
+                { titel: "React (Native) - JavaScript", keyFrame: "thirdjsAni", width: 100, rating: 10 },
+                { titel: "CSS", keyFrame: "thirdcssAni", width: 65, rating: 6},
+                { titel: "PHP/MySQL", keyFrame: "thirdphpAni", width: 70, rating: 7 },
+                { titel: "Swift", keyFrame: "thirdSwiftAni", width: 90, rating: 9 }
             ],
             display: false,
             tid: 2,
@@ -28,8 +27,8 @@ export default class Third extends React.Component {
             <div className="thirdTop">
                 <Reveal onReveal={() => this.setState({ display: true })}>
                     <div className="thirdParent">
-                        <div>
-                            <SkillsInfo aktiv={this.state.aktiv} rating={this.state.aktiv != null ? this.state.lang[this.state.aktiv].width : ""}/>
+                        <div className="thirdSkillInfo">
+                            <SkillsInfo aktiv={this.state.aktiv} rating={this.state.aktiv != null ? this.state.lang[this.state.aktiv].rating : ""}/>
                         </div>
                         <div className="thirdGraph">
                             {this.state.display && (this.state.lang.sort((a, b) => b.width - a.width).map((e, index) =>

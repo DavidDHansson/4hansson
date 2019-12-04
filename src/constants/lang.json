@@ -1,23 +1,48 @@
 {
-    "lang": ["en", "dk"],
-    "nav": [[
-        "Home",
-        "Projects",
-        "Contact"
-    ],[
-        "Hjem",
-        "Projekter",
-        "Kontakt"
-    ]],
-    "startTitel": ["Hello, Welcome", "Hej, Velkommen"],
+    "lang": [
+        "en",
+        "dk"
+    ],
+    "nav": [
+        [
+            "Home",
+            "Projects",
+            "Contact"
+        ],
+        [
+            "Hjem",
+            "Projekter",
+            "Kontakt"
+        ]
+    ],
+    "startTitel": [
+        "Hello, Welcome",
+        "Hej, Velkommen"
+    ],
     "startTitelBes": [
         "My name is David Hansson, and I’m 17 years old. My everyday life consists of school, where I’m currently in my second year, under the branch HTX. We have a focus on programming and technology on my line, which has always been one of my big passions since a young age. ",
         "Mit navn er David Hansson og jeg er 17 år gammel. Til dagligt går jeg i 2.g, under grenen HTX. På min linje har vi fokus på programmering og teknologi, hvilket har været en af mine store passioner siden en ung alder."
     ],
-    "skillsInfo": ["What can I do?", "Hvad kan jeg?"],
-    "skillsBes": [
-        ["JavaScript yes", "RN indeed", "React yes", "PHP wow", "Styling yes"],
-        [" idk ", "RN wow wow dansk", "React jaja", "PHP det gammelt", "Css wow en fleks boks"]
+    "skillsInfo": [
+        "What can I do?",
+        "Hvad kan jeg?"
     ],
-    "langInfo": ["Choose Language", "Vælg Sprog"]
+    "skillsBes": [
+        [
+            "JavaScript was my beginner language. I began learning at the age of 14, shortly after discovering and learning HTML. I read \"Head First JavaScript Programming: A Brain-Friendly Guide\" in the summer vacation between 8. And 9. Class. I shortly after hopped on the popular React Framework, that 4hansson.dk, also is built on. I have developed 2 apps in React Native. I’m a big fan of the RN-concept, and the idea of a universal codebase.",
+            "My first job was with Swift. I worked with the app Listen To News. My first project was Siri Integration. I have 1 year of experience with Swift.",
+            "The second language I learned was PHP. It gave me an understanding of what web development was about. It was also my first insight into SQL-databases.",
+            "I learned CSS under the development of my first apps (in React Native). I have since then used more time on CSS under the development of 4hansson.dk."
+        ],
+        [
+            "JavaScript var mit begyndersprog. Jeg lærte det i 8. klasse kort efter jeg fandt og lærte HTML. I sommerferien mellem 8. og 9. klasse læste jeg \"Head First JavaScript Programming: A Brain-Friendly Guide\". Jeg hoppede kort efter på det meget populære React Framework, som 4hansson.dk også er udviklet på. Jeg har udviklet 2 apps i React Native. Jeg er stor fan af RN-konceptet, og ideen om en samlet codebase.",
+            "Mit første job var med Swift. Jeg arbejdede med appen Listen To News. Hvori mit første projekt var Siri integration. Jeg har 1 års erfaring med Swift.",
+            "Det andet sprog jeg lærte, var PHP. Det gav mig forståelse for hvordan web udvikling virkelig foregik. Det var også mit første indblik på SQL-databaser.",
+            "Jeg lærte CSS under udviklingen af mine første apps (i React Native). Har efterfølgende brugt mere tid på CSS under udviklingen af 4hansson.dk."
+        ]
+    ],
+    "langInfo": [
+        "Choose Language",
+        "Vælg Sprog"
+    ]
 }
