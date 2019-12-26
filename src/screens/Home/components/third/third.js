@@ -11,9 +11,9 @@ export default class Third extends React.Component {
         super(props);
         this.state = {
             lang: [
-                { titel: "React (Native) - JavaScript", keyFrame: "thirdjsAni", width: 100, rating: 10 },
+                { titel: "React (Native) & JavaScript", keyFrame: "thirdjsAni", width: 100, rating: 10 },
                 { titel: "CSS", keyFrame: "thirdcssAni", width: 65, rating: 6},
-                { titel: "PHP/MySQL", keyFrame: "thirdphpAni", width: 70, rating: 7 },
+                { titel: "PHP & MySQL", keyFrame: "thirdphpAni", width: 70, rating: 7 },
                 { titel: "Swift", keyFrame: "thirdSwiftAni", width: 90, rating: 9 }
             ],
             display: false,

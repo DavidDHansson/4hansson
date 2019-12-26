@@ -6,6 +6,7 @@ import "./App.css";
 import Home from "./screens/Home/Home";
 import Projects from "./screens/Projects/Projects";
 import Contact from "./screens/Contact/Contact";
+import NotFound from "./screens/NotFound/NotFound";
 
 import Navigation from "./components/Navigation/Navigation";
 import { LangProvider } from './components/LangContext/LangContext';
@@ -23,6 +24,7 @@ class App extends React.Component {
                         <Route path="/home" component={Home} />
                         <Route path="/projects" component={Projects} />
                         <Route path="/contact" component={Contact} />
+                        <Route component={NotFound} />
                     </Switch>
                 </Router>
             </LangProvider>

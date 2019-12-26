@@ -7,11 +7,11 @@ export default class Parti extends React.Component {
         return(
             <div>
                 <Particles
-                    height={ window.innerHeight - this.props.size }
+                    height={ window.innerHeight * 0.9}
                     params={{
                         particles: {
                             number: {
-                                value: 80,
+                                value: 40,
                                 density: {
                                     enable: true,
                                     value_area: 650
@@ -86,8 +86,8 @@ export default class Parti extends React.Component {
                                 },
                                 onclick: {
                                     enable: true,
-                                    // mode: "remove"
-                                    mode: "push"
+                                    mode: "remove"
+                                    // mode: "push"
                                 },
                                 resize: true
                             },

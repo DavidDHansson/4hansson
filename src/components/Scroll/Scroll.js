@@ -1,0 +1,23 @@
+import React from "react";
+
+import smoothscroll from 'smoothscroll-polyfill';
+import "./Scroll.css";
+
+export default function Scroll() {
+    function toTop() {
+        window.__forceSmoothScrollPolyfill__ = true;
+        smoothscroll.polyfill();
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }
+
+    return (
+        <div>
+        <br />
+            <div className="scrollToTopPar">
+                <div onClick={() => toTop()} className="scrollToTopDiv">
+                    <i className="scrollToTop"></i>
+                </div>
+            </div>
+        </div>
+    );
+}

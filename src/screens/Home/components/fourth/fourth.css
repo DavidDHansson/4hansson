@@ -1,11 +1,21 @@
 .fourthPar {
-    display: flex;
-    flex-direction: row;
     width: 100%;
     height: 1000px;
     background-color: #27384a;
 }
 
-.fourthPar > div {
+.fourthWrapper > div {
     width: 50%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.fourthWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    color: white;
+    text-align: center;
 }

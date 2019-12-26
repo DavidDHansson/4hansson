@@ -24,9 +24,9 @@ export default function Navigation() {
 
     return (
         <div className="navParent" id="nav">
-            <Link className="navPChild" to="/" exact>  <div className="navDivChild"> {lang === trans.lang[0] && (trans.nav[0][0])} {lang === trans.lang[1] && (trans.nav[1][0])} </div> </Link>
-            <Link className="navPChild" to="/projects"> <div className="navDivChild"> {lang === trans.lang[0] && (trans.nav[0][1])} {lang === trans.lang[1] && (trans.nav[1][1])} </div> </Link>
-            <Link className="navPChild" to="/contact"> <div className="navDivChild"> {lang === trans.lang[0] && (trans.nav[0][2])} {lang === trans.lang[1] && (trans.nav[1][2])} </div> </Link>
+            <Link className="navPChild" activeStyle={{textDecoration: "underline"}} to="/" exact>   <div className="navDivChild"> {lang === trans.lang[0] && (trans.nav[0][0])} {lang === trans.lang[1] && (trans.nav[1][0])} </div> </Link>
+            <Link className="navPChild" activeStyle={{textDecoration: "underline"}} to="/projects"> <div className="navDivChild"> {lang === trans.lang[0] && (trans.nav[0][1])} {lang === trans.lang[1] && (trans.nav[1][1])} </div> </Link>
+            <Link className="navPChild" activeStyle={{textDecoration: "underline"}} to="/contact">  <div className="navDivChild"> {lang === trans.lang[0] && (trans.nav[0][2])} {lang === trans.lang[1] && (trans.nav[1][2])} </div> </Link>
         </div>
     );
 }

@@ -19,7 +19,7 @@ export default function Second() {
             const scroll = window.scrollY >= 10 && window.scrollY <= 1500;
 
             if (scroll) {
-                const scale = mapRange(window.scrollY, 0, 1500, 1, 1.2);
+                const scale = mapRange(window.scrollY, 0, 1500, 0.8, 1);
                 const el = document.getElementById("gifStartTitle");
 
                 el != null && (el.style.transform = `scale(${scale})`);

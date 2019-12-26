@@ -29,20 +29,28 @@
     ],
     "skillsBes": [
         [
-            "JavaScript was my beginner language. I began learning at the age of 14, shortly after discovering and learning HTML. I read \"Head First JavaScript Programming: A Brain-Friendly Guide\" in the summer vacation between 8. And 9. Class. I shortly after hopped on the popular React Framework, that 4hansson.dk, also is built on. I have developed 2 apps in React Native. I’m a big fan of the RN-concept, and the idea of a universal codebase.",
-            "My first job was with Swift. I worked with the app Listen To News. My first project was Siri Integration. I have 1 year of experience with Swift.",
-            "The second language I learned was PHP. It gave me an understanding of what web development was about. It was also my first insight into SQL-databases.",
-            "I learned CSS under the development of my first apps (in React Native). I have since then used more time on CSS under the development of 4hansson.dk."
+            "JavaScript was my beginner language. I began learning at the age of 14, shortly after discovering and learning HTML. I learned 2 years after the Framework React, that 4hansson.dk also is built on. I have developed 2 apps in React Native, that both are released on Google Play. ",
+            "I first learned Swift as a 17-year-old. I got my first Swift-intern job, with zero Swift knowledge. I worked with the app and company Listen To News for 1 year.",
+            "The second language I learned was PHP. It gave me an understanding of what web development was about. It was also my first insight into SQL-databases. I learned this language as a 15-year-old.",
+            "I learned CSS under my HTML/JavaScript time and under the development of my first apps (in React Native). I have since then used more time on CSS under the development of 4hansson.dk."
         ],
         [
-            "JavaScript var mit begyndersprog. Jeg lærte det i 8. klasse kort efter jeg fandt og lærte HTML. I sommerferien mellem 8. og 9. klasse læste jeg \"Head First JavaScript Programming: A Brain-Friendly Guide\". Jeg hoppede kort efter på det meget populære React Framework, som 4hansson.dk også er udviklet på. Jeg har udviklet 2 apps i React Native. Jeg er stor fan af RN-konceptet, og ideen om en samlet codebase.",
-            "Mit første job var med Swift. Jeg arbejdede med appen Listen To News. Hvori mit første projekt var Siri integration. Jeg har 1 års erfaring med Swift.",
-            "Det andet sprog jeg lærte, var PHP. Det gav mig forståelse for hvordan web udvikling virkelig foregik. Det var også mit første indblik på SQL-databaser.",
-            "Jeg lærte CSS under udviklingen af mine første apps (i React Native). Har efterfølgende brugt mere tid på CSS under udviklingen af 4hansson.dk."
+            "JavaScript var mit begyndersprog. Jeg begyndte at lære det som 14-årig. Jeg lærte 2 år efter Frameworket React, som 4hansson.dk er udviklet på. Jeg har udviklet 2 apps i React Native, som begge er udgivet på Google Play. ",
+            "Jeg lærte først Swift som 17-årig. Jeg fik mit første swift-praktikant job, med nul Swift erfaring. Jeg arbejdede med appen og firmaet Listen To News gennem 1 år.",
+            "Det andet sprog jeg lærte, var PHP. Det gav mig forståelse for hvordan web udvikling virkelig foregik. Det var også mit første indblik på SQL-databaser. Jeg lærte dette sprog som 15-årig.",
+            "Jeg lærte CSS under min HTML/JavaScript tid og under udviklingen af mine første apps (i React Native). Har efterfølgende brugt mere tid på css under udviklingen af 4hansson.dk."
         ]
     ],
     "langInfo": [
         "Choose Language",
         "Vælg Sprog"
+    ],
+    "fourthTitle": [
+        "Frontend? Yes that's me",
+        "Frontend? Ja det mig"
+    ],
+    "fourtBes": [
+        "My specialty is frontend. Everything from Apps for Android and IOS to streamlined websites. I am always up to date with the latest technology and I always strive to learn something new.",
+        "Mit speciale er indenfor frontend. Alt fra Apps til Android og IOS til strømlinede hjemmesider. Jeg er altid med på den nyeste teknologi, og jeg stræber altid efter at lære noget nyt."
     ]
 }

@@ -46,6 +46,7 @@
 
 .thirdMiniPar:hover {
     transform: translateY(-12px);
+    cursor: help;
 }
 
 @keyframes thirdjsAni          { from { width: 0%; } to { width: 100%; } }

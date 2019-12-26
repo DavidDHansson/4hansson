@@ -39,5 +39,9 @@
     transform: translateY(-20%);
 }
 
+.navDivChildActive {
+    text-decoration: underline;
+}
+
 /* ----------------------------- */
 
