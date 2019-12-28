@@ -39,7 +39,6 @@ export default function Second() {
 
     return (
         <div>
-        <div style={{ backgroundColor: "rgb(230, 232, 236)", padding: "50px" }}></div>
         <div className="secondPar">
             <Zoom>
                 <div className="secondWrapper">
@@ -60,7 +59,6 @@ export default function Second() {
                 </div>
             </Zoom>
         </div>
-        <div style={{ backgroundColor: "rgb(230, 232, 236)", padding: "50px" }}></div>
         </div>
     );
 }

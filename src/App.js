@@ -11,14 +11,17 @@ import NotFound from "./screens/NotFound/NotFound";
 import Navigation from "./components/Navigation/Navigation";
 import { LangProvider } from './components/LangContext/LangContext';
 
+import Fire from "./components/Fire/Fire";
+
 //https://reactjs.org/docs/context.html#dynamic-context
+
 
 class App extends React.Component {
     render() {
         return (
             <LangProvider>
                 <Router>
-                    <Navigation changeLang={this.changeLang}/>
+                    <Navigation changeLang={this.changeLang} />
                     <Switch>
                         <Route path="/" exact component={Home} />
                         <Route path="/home" component={Home} />

@@ -1,6 +1,37 @@
 .contactFirstWrapper {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
-    
+}
+
+.contactMainWrapper {
+    background-color: "#c9f0ff";
+    padding-bottom: 150px;
+    height: 600px;
+    text-align: center;
+}
+
+.contactMainTitle {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 69px;
+    color: #92dce5;
+    padding-bottom: 20px;
+}
+
+.contactMainTypesWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: initial;
+}
+
+.contactMainTypeBes > a, .link {
+    color: white;
+}
+
+.contactMainTypeBes > a:hover, .link:hover {
+    color: #92dce5;
 }

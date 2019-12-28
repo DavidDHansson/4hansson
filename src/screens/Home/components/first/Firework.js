@@ -3,7 +3,7 @@ import React from "react";
 import useWindowSize from "react-use-window-size";
 import { Fireworks } from 'fireworks/lib/react'
 
-export default function Fire(props) {
+export default function Firework(props) {
     const { width, height } = useWindowSize();
 
     let fx = {

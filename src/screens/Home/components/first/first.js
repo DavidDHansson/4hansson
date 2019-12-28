@@ -2,7 +2,7 @@ import React from "react";
 
 import Particles from "./Particles";
 import "./first.css";
-import Fire from "./fire";
+import Fire from "./Firework";
 
 import Pulse from 'react-reveal/Pulse';
 
@@ -20,7 +20,6 @@ export default class First extends React.Component {
         const el = document.getElementsByClassName("navNavn");
 
         for (let i = 0; i < el.length; i++) {
-
             el[i].addEventListener("mouseenter", () => {
                 this.setState({
                     navnHover: true,

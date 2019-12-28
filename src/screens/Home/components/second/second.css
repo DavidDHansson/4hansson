@@ -4,6 +4,8 @@
 
 .secondPar {
     background-color: rgb(230, 232, 236);
+    padding-top: 150px;
+    padding-bottom: 150px;
     height: 600px;
     text-align: center;
 }

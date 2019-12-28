@@ -14,13 +14,13 @@ export default function Footer() {
     return (
         <div className="footerParent">
             <div className="footerChild">
+                <Scroll />
                 <div> <p> {lang === trans.lang[0] && (trans.langInfo[0])} {lang === trans.lang[1] && (trans.langInfo[1])} </p> </div>
                 <LangChange />
-                <Scroll />
             </div>
             <div className="footerChild">
                 <p>Copyright © {d.getFullYear()} 4hansson.dk - All rights reserved</p>
-                <p>David Hansson - <a href="mailto:Hansson.d.david@gmail.com" style={{ color: "white" }} >Hansson.d.david@gmail.com</a></p>
+                <p>David Hansson - <a href="mailto:Hansson.d.david@gmail.com" className="link" >Hansson.d.david@gmail.com</a></p>
             </div>
         </div>
     );
