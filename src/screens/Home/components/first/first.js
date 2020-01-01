@@ -59,9 +59,9 @@ export default class First extends React.Component {
 
                 <Pulse>
                     <div className="navText navEl1">
-                        <span class="navNavn">D</span>
+                        <span className="navNavn">D</span>
                         avid<span> </span>
-                        <span class="navNavn">H</span>
+                        <span className="navNavn">H</span>
                         ansson
                     </div>
                 </Pulse>
