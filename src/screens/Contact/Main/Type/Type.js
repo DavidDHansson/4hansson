@@ -6,20 +6,13 @@ export default function Type(props) {
     const [space] = useState(String.fromCharCode(32));
 
     return (
-        <div style={{
-            width: "20%",
-            padding: "10px",
-            textAlign: "center",
-            color: "white",
-            height: "200px",
-        }}>
-            <div style={{ height: "40%" }}>
+        <div className="contactMainTypes">
+            <div className="contactMainPic">
                 <img src={props.src[0]} style={{ width: `${props.width}%` }} alt={props.src[1]}/>
             </div>
-            <h1 style={{
+            <h1 className="contantMainTypesTitle" style={{
                 fontSize: "30px",
                 fontWeight: "500px",
-                transform: "translateY(-25px)"
             }}>{props.title}</h1>
 
             <div className="contactMainTypeBes" style={{lineHeight: "1.4"}}>

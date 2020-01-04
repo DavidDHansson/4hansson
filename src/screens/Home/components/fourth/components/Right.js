@@ -3,11 +3,13 @@ import React, { useContext } from "react";
 import trans from "./../../../../../constants/lang";
 import { LangContext } from "./../../../../../components/LangContext/LangContext";
 
-export default function Rigth() {
+import "./../fourth.css";
+
+export default function Right() {
     const [lang] = useContext(LangContext);
 
     return (
-            <div style={{ width: "50%", padding: "10%" }}>
+            <div className="fourthRigthText">
                 <div style={{ fontSize: "50px" }}>
                     <p>
                         {lang === trans.lang[0] && (trans.fourthTitle[0])}

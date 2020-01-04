@@ -5,6 +5,7 @@
     z-index: 2;
     margin: auto;
     text-align: center;
+    white-space: nowrap;
 }
 
 .navEl2 {
@@ -33,4 +34,10 @@
     line-height: 20px;
     font-size: 69px;
     color: #92dce5;
+}
+
+@media screen and (max-width: 480px) {
+    .navText, .navNavn {
+        font-size: 40px;
+    }
 }

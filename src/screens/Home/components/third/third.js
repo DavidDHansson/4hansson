@@ -12,7 +12,7 @@ export default class Third extends React.Component {
         this.state = {
             lang: [
                 { titel: "React (Native) & JavaScript", keyFrame: "thirdjsAni", width: 100, rating: 10 },
-                { titel: "CSS", keyFrame: "thirdcssAni", width: 65, rating: 6},
+                { titel: "CSS", keyFrame: "thirdcssAni", width: 65, rating: 6 },
                 { titel: "PHP & MySQL", keyFrame: "thirdphpAni", width: 70, rating: 7 },
                 { titel: "Swift", keyFrame: "thirdSwiftAni", width: 90, rating: 9 }
             ],
@@ -28,7 +28,7 @@ export default class Third extends React.Component {
                 <Reveal onReveal={() => this.setState({ display: true })}>
                     <div className="thirdParent">
                         <div className="thirdSkillInfo">
-                            <SkillsInfo aktiv={this.state.aktiv} rating={this.state.aktiv != null ? this.state.lang[this.state.aktiv].rating : ""}/>
+                            <SkillsInfo aktiv={this.state.aktiv} rating={this.state.aktiv != null ? this.state.lang[this.state.aktiv].rating : ""} />
                         </div>
                         <div className="thirdGraph">
                             {this.state.display && (this.state.lang.sort((a, b) => b.width - a.width).map((e, index) =>

@@ -1,16 +1,13 @@
 .thirdTop {
-    display: flex;
-    flex-direction: row;
     background-color: rgb(246, 246, 248);
-    height: 620px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    height: 820px;
 }
 
 .thirdParent {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -53,3 +50,12 @@
 @keyframes thirdcssAni         { from { width: 0%; } to { width: 65%; } }
 @keyframes thirdphpAni         { from { width: 0%; } to { width: 70%; } }
 @keyframes thirdSwiftAni       { from { width: 0%; } to { width: 90%; } }
+
+@media screen and (max-width: 480px) {
+    .thirdParent {
+        flex-direction: column;
+    }   
+    .thirdGraph {
+        width: 90%;
+    }
+}

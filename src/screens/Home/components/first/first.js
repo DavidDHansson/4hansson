@@ -61,16 +61,17 @@ export default class First extends React.Component {
                     <div className="navText navEl1">
                         <span className="navNavn">D</span>
                         avid<span> </span>
+                        {window.innerWidth <= 480 && (<div><br /> <br /></div>)}
                         <span className="navNavn">H</span>
                         ansson
                     </div>
                 </Pulse>
 
-                    <Fire go={this.state.fire} />
+                <Fire go={this.state.fire} />
 
-                    <div className="navEl2">
-                        <Particles/>
-                    </div>
+                <div className="navEl2">
+                    <Particles />
+                </div>
                 <div style={{ paddingTop: window.innerHeight * 0.9 }}></div>
             </div>
         );

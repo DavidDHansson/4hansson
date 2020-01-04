@@ -5,7 +5,7 @@ import Dot from "./Dot";
 
 export default function Left() {
     return (
-        <div style={{ widt: "50%" }}>
+        <div>
             <img src={codedot} alt="Code Dot" style={{ width: "90%" }} />
             <br />
             <div style={{ position: "absolute", left: "50%" }}>

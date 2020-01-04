@@ -35,3 +35,36 @@
 .contactMainTypeBes > a:hover, .link:hover {
     color: #92dce5;
 }
+
+.contactMainTypes {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    height: 200px;
+}
+
+.contactMainPic {
+    height: 40%;
+}
+
+.contactMainTypesTitle {
+    transform: translateY(-25px);
+}
+
+@media screen and (max-width: 600px) {
+    .contactMainWrapper {
+        height: 1500px;
+    }
+    .contactMainTypesWrapper {
+        flex-direction: column;
+    }
+    .contactMainTypes {
+        padding-bottom: 100px;
+    }
+    .contactMainTitle {
+        font-size: 50px;
+    }
+    .contactMainTypesTitle {
+        transform: translateY(-10px);
+    }
+}

@@ -6,8 +6,6 @@
 
 .fourthWrapper > div {
     width: 50%;
-    margin-top: 150px;
-    margin-bottom: 150px;
 }
 
 .fourthWrapper {
@@ -18,4 +16,23 @@
     align-items: center;
     color: white;
     text-align: center;
+}
+
+.fourthRigthText {
+    padding: 10%;
+}
+
+@media screen and (max-width: 480px) {
+    .fourthWrapper {
+        flex-direction: column-reverse;
+    }
+    .fourthWrapper > div {
+        width: 80%;;
+    }
+    .fourthRigthText {
+        padding: 0;
+    }
+    .fourthPar {
+        height: 1200px;
+    }
 }
