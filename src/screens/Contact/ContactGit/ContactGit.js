@@ -1,19 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-export default function ContactGit() {
-    const [gitEvents, setGitEvents] = useState({ data: []});
+import YearlyGit from "./YearlyGit";
+import ContactGitInfo from "./ContactGitInfo";
 
-    useEffect(() => {
-        // fetch("https://api.github.com/users/daviddhansson/events")
-        //     .then(res => res.json())
-        //     .then(setGitEvents);
-        //fuck det bare brug class components ://
-    }, []);
+import "./ContactGit.css";
+
+export default class ContactGit extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: []
+        }
+    }
+
+    componentDidMount() {
+        fetch("https://github-contributions-api.now.sh/v1/daviddhansson")
+            .then(res => res.json())
+            .then(json => {
+                let arr = json.contributions
+
+                const d = new Date();
+                let dato = `${d.getFullYear()}-${d.getMonth() + 1 <= 10 ? `0${d.getMonth() + 1}` : d.getMonth() + 1}-${d.getDate() <= 10 ? `0${d.getDate()}` : d.getDate()}`
+
+                let now = 0;
+                for(let i = 0; i < arr.length; i++) {
+                    if (arr[i].date == dato) {
+                        now = i
+                    }
+                }
+
+                arr = arr.slice(now, arr.length - 1).reverse();
+
+                this.setState({data: arr});
+            })
+
+        
+    }
 
 
-    return (
-        <div style={{ paddingTop: "250px", paddingBottom: "200px", backgroundColor: "rgb(230, 232, 236)" }}>
-            {/* <p>{gitEvents[0].actor.display_login}</p> */}
-        </div>
-    )
+    render() {
+        return (
+            <div className="contactGitWrapper">
+                <YearlyGit data={this.state.data}/>
+                <ContactGitInfo />
+            </div>
+        );
+    }
 }

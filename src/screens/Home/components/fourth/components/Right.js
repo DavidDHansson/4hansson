@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
-import trans from "./../../../../../constants/lang";
-import { LangContext } from "./../../../../../components/LangContext/LangContext";
+import trans from "constants/lang";
+import { LangContext } from "components/LangContext/LangContext";
 
 import "./../fourth.css";
 

@@ -5,10 +5,10 @@ import "./../second.css";
 // https://www.react-reveal.com/examples/common/
 // https://www.react-reveal.com/docs/props 
 // Onreveal Analytics
-import LangChange from "./../../../../../components/langChange/LangChange";
-import { LangContext } from "../../../../../components/LangContext/LangContext";
+import LangChange from "components/langChange/LangChange";
+import { LangContext } from "components/LangContext/LangContext";
 
-import trans from "./../../../../../constants/lang";
+import trans from "constants/lang";
 
 export default function StartTitel() {
     const [ lang ] = useContext(LangContext);

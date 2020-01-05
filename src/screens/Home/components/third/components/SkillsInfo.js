@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 
 import "./../third.css";
 
-import trans from "./../../../../../constants/lang";
-import { LangContext } from "../../../../../components/LangContext/LangContext";
+import trans from "constants/lang";
+import { LangContext } from "components/LangContext/LangContext";
 
 export default function SkillsInfo(props) {
     const [lang] = useContext(LangContext);

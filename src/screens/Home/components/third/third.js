@@ -1,5 +1,5 @@
 import React from "react";
-import Reveal from "react-reveal/Reveal";
+import Zoom from 'react-reveal/Zoom';
 
 import "./third.css";
 
@@ -25,7 +25,7 @@ export default class Third extends React.Component {
     render() {
         return (
             <div className="thirdTop">
-                <Reveal onReveal={() => this.setState({ display: true })}>
+                <Zoom onReveal={() => this.setState({ display: true })}>
                     <div className="thirdParent">
                         <div className="thirdSkillInfo">
                             <SkillsInfo aktiv={this.state.aktiv} rating={this.state.aktiv != null ? this.state.lang[this.state.aktiv].rating : ""} />
@@ -48,7 +48,7 @@ export default class Third extends React.Component {
                             ))}
                         </div>
                     </div>
-                </Reveal>
+                </Zoom>
             </div>
         );
     }

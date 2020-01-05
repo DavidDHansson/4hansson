@@ -52,5 +52,17 @@
     "fourtBes": [
         "My specialty is frontend. Everything from Apps for Android and IOS to streamlined websites. I am always up to date with the latest technology and I always strive to learn something new.",
         "Mit speciale er indenfor frontend. Alt fra Apps til Android og IOS til strømlinede hjemmesider. Jeg er altid med på den nyeste teknologi, og jeg stræber altid efter at lære noget nyt."
+    ],
+    "contactMainTitle": [
+        "Contact Me",
+        "Kontakt Mig"
+    ],
+    "contactMainTypes": [
+        ["Location", "Email", "Phone", "LinkedIn"],
+        ["Lokalitet", "Email", "Telefon", "LinkedIn"]
+    ],
+    "contactMainPhone": [
+        ["Call", "or", "write", ""],
+        ["Ring", "eller", "skriv", "til mig"]
     ]
 }

@@ -1,6 +1,8 @@
 .thirdTop {
     background-color: rgb(246, 246, 248);
-    height: 820px;
+    height: 520px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .thirdParent {

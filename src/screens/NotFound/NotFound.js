@@ -1,5 +1,9 @@
 import React from "react";
 
+import Tow from "./assets/tow.js";
+
+import "constants/style.css";
+
 export default function NotFound() {
     return (
         <div style={{
@@ -7,9 +11,19 @@ export default function NotFound() {
             flexDirection: "column",
             paddingTop: "200px",
             textAlign: "center",
-            color: "white" 
+            color: "white"
         }}>
-            <h1>404 Not Found</h1>
+            <p className="title">Woops 404 Not Found</p>
+
+            <div style={{
+                paddingTop: "100px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+            }}>
+                <Tow />
+            </div>
+
         </div>
     );
 }

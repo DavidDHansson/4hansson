@@ -8,8 +8,8 @@ import mig from "./assets/mig.gif";
 import migstill from "./assets/migstill.jpg";
 
 import StartTitel from "./components/titel";
-import trans from "./../../../../constants/lang";
-import { LangContext } from "../../../../components/LangContext/LangContext";
+import trans from "constants/lang";
+import { LangContext } from "components/LangContext/LangContext";
 
 export default function Second() {
     const [lang] = useContext(LangContext);

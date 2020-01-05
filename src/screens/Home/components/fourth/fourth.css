@@ -1,6 +1,8 @@
 .fourthPar {
     width: 100%;
-    height: 1000px;
+    height: 700px;
+    padding-bottom: 150px;
+    padding-top: 150px;
     background-color: #27384a;
 }
 

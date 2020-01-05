@@ -1,16 +1,16 @@
 import React from "react";
 
 import "./Contact.css";
-import Footer from "../../components/Footer/Footer";
+import Footer from "components/Footer/Footer";
 
-import Main from "./Main/Main";
+import ContactMain from "./ContactMain/ContactMain";
 import ContactGit from "./ContactGit/ContactGit";
 
-export default class Kontakt extends React.Component {
+export default class Contact extends React.Component {
     render() {
         return (
             <div className="contactFirstWrapper">
-                <Main />
+                <ContactMain />
                 <ContactGit />
                 <Footer />
             </div>
