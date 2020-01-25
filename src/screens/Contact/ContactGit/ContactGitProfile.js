@@ -20,27 +20,24 @@ export default class ContactGitProfile extends React.Component {
     render() {
         const { error, isLoaded, data } = this.state;
 
-        return error
-            ? <div>Error</div>
+        return error || data.message
+            ? <div>Woops, an error occurred</div>
             : !isLoaded
                 ? <div>Loading...</div>
-                : <div style={{ border: "2px solid black", width: "50%"}}>
-                    <div className="contactGitProfileWrapper">
+                : <div className="contactGitProfileWrapper">
 
-                        <div><img src={data.avatar_url} className="contactGitProfileImg" /></div>
+                    <div><img src={data.avatar_url} className="contactGitProfileImg" /></div>
 
-                        <div style={{ height: "3ch" }}><p style={{ fontWeight: 700, fontSize: "26px" }}>{data.name}</p></div>
-                        <div style={{ height: "3ch", paddingBottom: "4ch" }}><p style={{ color: "rgb(200)", fontSize: "22px" }}>{data.login}</p></div>
+                    <div style={{ height: "3ch" }}><p style={{ fontWeight: 700, fontSize: "26px" }}>{data.name}</p></div>
+                    <div style={{ height: "3ch", paddingBottom: "4ch" }}><p style={{ color: "rgb(200)", fontSize: "22px" }}>{data.login}</p></div>
 
-                        <div style={{ height: "2ch", paddingBottom: "3ch" }}><p>{data.bio}</p></div>
+                    <div style={{ height: "2ch", paddingBottom: "3ch" }}><p>{data.bio}</p></div>
 
-                        <div style={{ height: "2ch" }}><p style={{ fontWeight: 700 }}>{data.company}</p></div>
-                        <div style={{ height: "2ch", paddingBottom: "3ch" }}><p>{data.location}</p></div>
+                    <div style={{ height: "2ch" }}><p style={{ fontWeight: 700 }}>{data.company}</p></div>
+                    <div style={{ height: "2ch", paddingBottom: "3ch" }}><p>{data.location}</p></div>
 
 
-                        <div style={{ height: "2ch" }}><a href={data.url}>(Github Profile)</a></div>
-                    </div>
+                    <div style={{ height: "2ch" }}><a href={data.url}>(Github Profile)</a></div>
                 </div>
-
     }
 }
