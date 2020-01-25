@@ -8,21 +8,21 @@ import { LangContext } from "components/LangContext/LangContext";
 export default function SkillsInfo(props) {
     const [lang] = useContext(LangContext);
 
-    const displayNoneForMobile = () => window.width <= 480 ? { display: "none" } : { color: "black" };
-
+    const displayNoneForMobile = () => window.width >= 480 ? { display: "none" } : { color: "black" };
+    const displayTitleForMobile = () => window.width <= 480 ? {position:"absolute", right: "50%", top: "0", transform: "translate(50%, 0)"} : {};
 
     return (
         <div style={{ textAlign: "justify" }}>
-            <div style={{ fontSize: 32, fontWeight: 400 }}>
+            <div style={{ fontSize: 32, fontWeight: 400, whiteSpace: "nowrap" }}>
                 {lang === trans.lang[0] && (
                     <div>
-                        <p>{trans.skillsInfo[0]}</p>
+                        <p style={displayTitleForMobile()}>{trans.skillsInfo[0]}</p>
                         <p>{props.rating !== "" ? `${props.rating} / 10` : ""}</p>
                     </div>
                 )}
                 {lang === trans.lang[1] && (
                     <div>
-                        <p>{trans.skillsInfo[1]}</p>
+                        <p style={displayTitleForMobile()} >{trans.skillsInfo[1]}</p>
                         <p>{props.rating !== "" ? `${props.rating} / 10` : ""}</p>
                     </div>
                 )}

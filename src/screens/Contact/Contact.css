@@ -30,18 +30,13 @@
     text-align: center;
     color: white;
     height: 200px;
-    width: 20%;
-}
-
-.contactMainPic {
-    height: 40%;
 }
 
 .contactMainTypesTitle {
     transform: translateY(-25px);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .contactMainWrapper {
         height: 1500px;
     }
@@ -56,5 +51,11 @@
     }
     .contactMainTypesTitle {
         transform: translateY(-10px);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .contactMainTypes {
+        width: 20%;
     }
 }

@@ -15,7 +15,7 @@ export default function Type(props) {
 
     return (
         <div className="contactMainTypes">
-            <div className="contactMainPic">
+            <div>
                 <img src={props.src[0]} style={{ width: `${props.width}%` }} alt={props.src[1]}/>
             </div>
             <h1 className="contantMainTypesTitle" style={{
