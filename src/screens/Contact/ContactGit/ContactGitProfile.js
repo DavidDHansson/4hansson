@@ -28,16 +28,21 @@ export default class ContactGitProfile extends React.Component {
 
                     <div><img src={data.avatar_url} className="contactGitProfileImg" /></div>
 
-                    <div style={{ height: "3ch" }}><p style={{ fontWeight: 700, fontSize: "26px" }}>{data.name}</p></div>
-                    <div style={{ height: "3ch", paddingBottom: "4ch" }}><p style={{ color: "rgb(200)", fontSize: "22px" }}>{data.login}</p></div>
+                    <div style={{ height: "1ch" }}><p style={{ fontWeight: 700, fontSize: "30px" }}>{data.name}</p></div>
+                    <div style={{ 
+                            height: "1ch",
+                            paddingBottom: "2ch",
+                            borderBottom: "1px solid rgb(150, 150, 150)",
+                            width: "50%"
+                    }}><p style={{ color: "rgb(90, 90, 90)", fontSize: "26px" }}>{data.login}</p></div>
 
-                    <div style={{ height: "2ch", paddingBottom: "3ch" }}><p>{data.bio}</p></div>
+                    <div style={{ height: "1ch", paddingBottom: "1ch" }}><p>{data.bio}</p></div>
 
-                    <div style={{ height: "2ch" }}><p style={{ fontWeight: 700 }}>{data.company}</p></div>
-                    <div style={{ height: "2ch", paddingBottom: "3ch" }}><p>{data.location}</p></div>
+                    <div style={{ height: "1ch" }}><p style={{ fontWeight: 700 }}>{data.company}</p></div>
+                    <div style={{ height: "1ch", paddingBottom: "3ch" }}><p>{data.location}</p></div>
 
 
-                    <div style={{ height: "2ch" }}><a href={data.url}>(Github Profile)</a></div>
+                    <div style={{ height: "1ch" }} className="contactGitProfileLink"><a href={"https://github.com/DavidDHansson"}>https://github.com/DavidDHansson</a></div>
                 </div>
     }
 }

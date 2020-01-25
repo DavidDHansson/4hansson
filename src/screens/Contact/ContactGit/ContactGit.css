@@ -12,12 +12,23 @@
 .contactGitProfileWrapper {
     text-align: justify;
     width: 40%;
-}
-
-.contactGitProfileWrapper > div {
-    
+    transform: translateX(20%);
 }
 
 .contactGitProfileImg {
-    width: 100px;
+    width: 50%;
+}
+
+.contactGitProfileLink :visited {
+    color: black
+}
+
+@media screen and (max-width: 700px) {
+    .contactGitWrapper {
+        flex-direction: column;
+    }
+    .contactGitProfileWrapper {
+        transform: translateX(0);
+        width: 70%;
+    }
 }
