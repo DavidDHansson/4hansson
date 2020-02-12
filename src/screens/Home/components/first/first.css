@@ -1,14 +1,10 @@
-.navEl1 {
-    position: absolute;
-    right: 50%;
-    top: 35%;
-    z-index: 2;
+.mainFirstName {
     margin: auto;
     text-align: center;
     white-space: nowrap;
 }
 
-.navEl2 {
+.mainFirstParticles {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -26,6 +22,10 @@
     color: black;
 }
 
+.mainFirstPhoto:hover {
+    border-color: black;
+}
+
 .navText {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-style: normal;
@@ -36,8 +36,41 @@
     color: #92dce5;
 }
 
-@media screen and (max-width: 600px) {
-    .navText, .navNavn {
-        font-size: 40px;
+.mainFirstPhoto {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #538b91;
+    border-color: #538b91;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.mainFirstPhotoWrapper {
+    z-index: 2;
+    margin: auto;
+}
+
+.mainFirstNamePhotoWrapper {
+    display: flex;
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    z-index: 2;
+    flex-direction: row;
+    
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 810px) {
+    .mainFirstNamePhotoWrapper {
+        flex-direction: column;
+    }
+    .mainFirstPhoto {
+        width: 150px;
+        height: 150px;
     }
 }

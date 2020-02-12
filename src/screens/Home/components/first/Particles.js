@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState, useLayoutEffect } from "react";
 import Particles from "react-particles-js";
 
-export default class Parti extends React.Component {
+export default function Parti() {
+    const [size, setSize] = useState(window.innerHeight * 0.9);
 
-    render() {
-        return(
+    useLayoutEffect(() => {
+        window.addEventListener("resize", handler);
+
+        return () => window.removeEventListener("resize", handler);
+    }, []);
+
+    function handler() {
+        setSize(window.innerHeight * 0.9);
+    }
+
+    return (
+        <div>
             <div>
                 <Particles
-                    height={ window.innerHeight * 0.9}
+                    height={size}
                     params={{
                         particles: {
                             number: {
@@ -86,8 +97,8 @@ export default class Parti extends React.Component {
                                 },
                                 onclick: {
                                     enable: true,
-                                    mode: "remove"
-                                    // mode: "push"
+                                    // mode: "remove"
+                                    mode: "push"
                                 },
                                 resize: true
                             },
@@ -120,6 +131,6 @@ export default class Parti extends React.Component {
                     }}
                 />
             </div>
-        );
-    }
+        </div>
+    );
 }

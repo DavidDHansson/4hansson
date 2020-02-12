@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useLayoutEffect } from "react";
 
 import Particles from "./Particles";
 import "./first.css";
 import Fire from "./Firework";
+
+import David from "./david.jpg";
 
 import Pulse from 'react-reveal/Pulse';
 
@@ -12,6 +14,7 @@ export default class First extends React.Component {
         this.state = {
             navnHover: false,
             timer: "",
+            timerInactive: "",
             fire: 10
         }
     }
@@ -37,7 +40,7 @@ export default class First extends React.Component {
     }
 
     componentWillUnmount() {
-        const el = document.getElementsByClassName("NavNavn");
+        const el = document.getElementsByClassName("navNavn");
 
         for (let i = 0; i < el.length; i++) {
             el[i].removeEventListener("mouseenter", () => { }, true);
@@ -57,23 +60,58 @@ export default class First extends React.Component {
         return (
             <div>
 
-                <Pulse>
-                    <div className="navText navEl1">
-                        <span className="navNavn">D</span>
-                        avid<span> </span>
-                        {window.innerWidth <= 480 && (<div><br /> <br /></div>)}
-                        <span className="navNavn">H</span>
-                        ansson
-                    </div>
-                </Pulse>
 
                 <Fire go={this.state.fire} />
-
-                <div className="navEl2">
+                <div className="mainFirstParticles">
                     <Particles />
                 </div>
-                <div style={{ paddingTop: window.innerHeight * 0.9 }}></div>
+
+                <Content />
             </div>
         );
     }
 }
+
+
+function Content() {
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
+
+    useLayoutEffect(() => {
+        window.addEventListener("resize", handler);
+
+        return () => window.removeEventListener("resize", handler);
+    }, []);
+
+    function handler() {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+    }
+
+    return (
+        <div>
+            <Pulse>
+
+                <div style={{ width: width - 100 }} className="mainFirstNamePhotoWrapper">
+
+                    <div className="navText mainFirstName">
+                        <span className="navNavn">D</span>
+                        avid<span> </span>
+                        {width <= 480 && (<div><br /> <br /></div>)}
+                        <span className="navNavn">H</span>
+                        ansson
+                    </div>
+
+                    <div className="mainFirstPhotoWrapper navNavn">
+                        <img src={David} className="mainFirstPhoto" alt="David Hansson"/>
+                    </div>
+
+                </div>
+
+            </Pulse>
+
+            <div style={{ paddingTop: (height * 0.9) }}></div>
+        </div>
+    );
+}
+

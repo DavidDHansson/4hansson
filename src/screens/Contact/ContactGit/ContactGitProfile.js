@@ -1,5 +1,7 @@
 import React from "react";
 
+import Reveal from "react-reveal";
+
 export default class ContactGitProfile extends React.Component {
     constructor(props) {
         super(props);
@@ -24,16 +26,16 @@ export default class ContactGitProfile extends React.Component {
             ? <div>Woops, an error occurred</div>
             : !isLoaded
                 ? <div>Loading...</div>
-                : <div className="contactGitProfileWrapper">
+                : <div className="contactGitProfileWrapper"><Reveal>
 
-                    <div><img src={data.avatar_url} className="contactGitProfileImg" /></div>
+                    <div><img src={data.avatar_url} className="contactGitProfileImg" alt="Github Avatar"/></div>
 
                     <div style={{ height: "1ch" }}><p style={{ fontWeight: 700, fontSize: "30px" }}>{data.name}</p></div>
-                    <div style={{ 
-                            height: "1ch",
-                            paddingBottom: "2ch",
-                            borderBottom: "1px solid rgb(150, 150, 150)",
-                            width: "50%"
+                    <div style={{
+                        height: "1ch",
+                        paddingBottom: "2ch",
+                        borderBottom: "1px solid rgb(150, 150, 150)",
+                        width: "50%"
                     }}><p style={{ color: "rgb(90, 90, 90)", fontSize: "26px" }}>{data.login}</p></div>
 
                     <div style={{ height: "1ch", paddingBottom: "1ch" }}><p>{data.bio}</p></div>
@@ -42,7 +44,9 @@ export default class ContactGitProfile extends React.Component {
                     <div style={{ height: "1ch", paddingBottom: "3ch" }}><p>{data.location}</p></div>
 
 
-                    <div style={{ height: "1ch" }} className="contactGitProfileLink"><a href={"https://github.com/DavidDHansson"}>https://github.com/DavidDHansson</a></div>
-                </div>
+                    <div style={{ height: "1ch" }} className="contactGitProfileLink">
+                        <a target="_blank" rel="noopener noreferrer" href={`https://github.com/${data.login}`}>https://github.com/{data.login}</a>
+                    </div>
+                </Reveal></div>
     }
 }

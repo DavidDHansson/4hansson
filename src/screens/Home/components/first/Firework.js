@@ -6,7 +6,7 @@ import { Fireworks } from 'fireworks/lib/react'
 export default function Firework(props) {
     const { width, height } = useWindowSize();
 
-    let fx = {
+    const fx = {
         x: width,
         y: height,
         count: 3,
@@ -22,9 +22,11 @@ export default function Firework(props) {
         return ( <Fireworks {...fx} {... {colors: ['#282c34', '#92dce5', '#c9f0ff', "#f5f6f8", "#e6e8ec"]}} /> );
     }
 
-    if(props.go === 1) {
+    if(props.go === 1 || props.go === 2) {
         return ( <Fireworks {...fx} {... {colors: ['#e6e8ec', '#282c34', '#92dce5', "#c9f0ff", "#f5f6f8"]}}/> );
     }
+
+    
 
     return (<div></div>);
 }
