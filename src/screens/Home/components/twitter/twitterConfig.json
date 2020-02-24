@@ -1,0 +1,50 @@
+{
+    "pia": {
+        "user": {
+            "nickname": "Pia_Kjaersgaard",
+            "name": "Pia Kjærsgaard",
+            "avatar": "https://pbs.twimg.com/profile_images/1054641428545093633/dn-7olcC_400x400.jpg",
+            "verified": true,
+            "locked": false
+          },
+          "nightMode": false,
+          "text": "I just talked with David Hansson, an amazing and revolutionary guy. I'm very proud of the danish youth. Check him out at 4hansson.dk",
+          "image": "",
+          "date": "3:06 AM · Feb 23, 2020",
+          "app": "Twitter for SAMSUNG Smart Fridge",
+          "retweets": 420,
+          "likes": 2103
+    },
+    "lars": {
+        "user": {
+            "nickname": "larsloekke",
+            "name": "Lars Løkke Rasmussen",
+            "avatar": "https://pbs.twimg.com/profile_images/610120554738266112/I4pl2ygE_400x400.jpg",
+            "verified": true,
+            "locked": false
+          },
+          "nightMode": false,
+          "text": "I am a humble one. Thanks for the invitation – it was great fun. And I am still impressed by your achievement – See you next time David Hansson",
+          "image": "",
+          "date": "2:20 PM · Jan 12, 2020",
+          "app": "Twitter for 4Hansson.dk",
+          "retweets": 502,
+          "likes": 1200   
+    },
+    "obama": {
+        "user": {
+            "nickname": "BarackObama",
+            "name": "Barack Obama",
+            "avatar": "https://pbs.twimg.com/profile_images/822547732376207360/5g0FC8XX_400x400.jpg",
+            "verified": true,
+            "locked": false
+          },
+          "nightMode": false,
+          "text": "Happy Valentine’s Day to my forever dance partner, David Hansson.",
+          "image": "",
+          "date": "4:20 AM · Jan 20, 2019",
+          "app": "Twitter for iPhone",
+          "retweets": 69000,
+          "likes": 183000   
+    }
+}

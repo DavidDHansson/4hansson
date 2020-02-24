@@ -64,5 +64,9 @@
     "contactMainPhone": [
         ["Call", "or", "write", ""],
         ["Ring", "eller", "skriv", "til mig"]
+    ],
+    "TwitterTitle" : [
+        "David World Famous",
+        "Verdenskendt"
     ]
 }

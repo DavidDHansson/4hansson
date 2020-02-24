@@ -6,6 +6,7 @@ import First  from "./components/first/first";
 import Second from "./components/second/second";
 import Third from "./components/third/third";
 import Fourth from "./components/fourth/fourth";
+import Twitter from "./components/twitter/Twitter";
 import Footer from "components/Footer/Footer";
 
 export default class Home extends React.Component {
@@ -16,6 +17,7 @@ export default class Home extends React.Component {
                 <Second />
                 <Fourth />
                 <Third />
+                <Twitter />
                 <Footer />
             </div>
         );
