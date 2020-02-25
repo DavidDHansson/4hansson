@@ -4,7 +4,7 @@ import Zoom from 'react-reveal/Zoom';
 import "./third.css";
 
 import SkillsInfo from "./components/SkillsInfo";
-
+import log from "components/Log/Log";
 
 export default class Third extends React.Component {
     constructor(props) {
@@ -21,11 +21,14 @@ export default class Third extends React.Component {
             aktiv: null
         }
     }
-
+    
     render() {
         return (
             <div className="thirdTop">
-                <Zoom onReveal={() => this.setState({ display: true })}>
+                <Zoom onReveal={() => {
+                    this.setState({ display: true });
+                    log({ site: "Home", section: "4", time: "0" });
+                }}>
                     <div className="thirdParent">
                         <div className="thirdSkillInfo">
                             <SkillsInfo aktiv={this.state.aktiv} rating={this.state.aktiv != null ? this.state.lang[this.state.aktiv].rating : ""} />

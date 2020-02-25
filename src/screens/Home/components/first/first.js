@@ -1,12 +1,12 @@
 import React, { useState, useLayoutEffect } from "react";
 
 import Particles from "./Particles";
-import "./first.css";
+import Pulse from 'react-reveal/Pulse';
 import Fire from "./Firework";
 
 import David from "./david.jpg";
-
-import Pulse from 'react-reveal/Pulse';
+import log from "components/Log/Log";
+import "./first.css";
 
 export default class First extends React.Component {
     constructor(props) {
@@ -90,7 +90,7 @@ function Content() {
 
     return (
         <div>
-            <Pulse>
+            <Pulse onReveal={() => log({ site: "Home", section: "1", time: "0" })}>
 
                 <div style={{ width: width - 100 }} className="mainFirstNamePhotoWrapper">
 

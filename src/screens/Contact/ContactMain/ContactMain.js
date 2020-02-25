@@ -7,6 +7,7 @@ import { LangContext } from "components/LangContext/LangContext.js";
 
 import Type from "./Type/Type";
 import ContactMainTitle from "./ContactMainTitle";
+import log from "components/Log/Log";
 
 import work from "./assets/work.png";
 import location from "./assets/location.png";
@@ -17,18 +18,18 @@ export default function ContactMain() {
     const [lang] = useContext(LangContext);
 
     return (
-        <div className="contactMainWrapper" style={{ paddingTop: "250px", paddingBottom: "200px" }}>
-            <Zoom>
+        <Zoom onReveal={() => log({ site: "Contact", section: "1", time: "0" })}>
+            <div className="contactMainWrapper" style={{ paddingTop: "250px", paddingBottom: "200px" }}>
 
                 <ContactMainTitle />
 
                 <div style={{ paddingTop: "200px" }}></div>
 
                 <div className="contactMainTypesWrapper">
-                    <Type 
+                    <Type
                         src={[location, "Location by Assyifa Art from the Noun Project"]}
-                        width={16} 
-                        title={lang === trans.lang[0] ? trans.contactMainTypes[0][0] : trans.contactMainTypes[1][0] }
+                        width={16}
+                        title={lang === trans.lang[0] ? trans.contactMainTypes[0][0] : trans.contactMainTypes[1][0]}
                         bes={["bes", ["Denmark", "Solrød Strand / København"]]}
                     />
 
@@ -45,7 +46,7 @@ export default function ContactMain() {
                     <Type src={[work, "Work by Jaclyne Ooi from the Noun Project"]}
                         width={20} title="LinkedIn" bes={["link", ["David Hansson", "https://www.linkedin.com/in/david-hansson-037717198/"]]} />
                 </div>
-            </Zoom>
-        </div>
+            </div>
+        </Zoom>
     );
 }

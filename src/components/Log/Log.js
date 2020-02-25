@@ -6,7 +6,7 @@ export default function log(data = {}) {
         },
         body: JSON.stringify({
             ...data,
-            ... { key: String(process.env.REACT_APP_API_KEY) }
+            ...{ key: String(process.env.REACT_APP_API_KEY) }
         })
     });
 }

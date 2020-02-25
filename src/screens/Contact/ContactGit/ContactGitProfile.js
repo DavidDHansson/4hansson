@@ -1,6 +1,7 @@
 import React from "react";
 
 import Reveal from "react-reveal";
+import log from "components/Log/Log";
 
 export default class ContactGitProfile extends React.Component {
     constructor(props) {
@@ -26,7 +27,7 @@ export default class ContactGitProfile extends React.Component {
             ? <div>Woops, an error occurred</div>
             : !isLoaded
                 ? <div>Loading...</div>
-                : <div className="contactGitProfileWrapper"><Reveal>
+                : <div className="contactGitProfileWrapper">
 
                     <div><img src={data.avatar_url} className="contactGitProfileImg" alt="Github Avatar"/></div>
 
@@ -47,6 +48,6 @@ export default class ContactGitProfile extends React.Component {
                     <div style={{ height: "1ch" }} className="contactGitProfileLink">
                         <a target="_blank" rel="noopener noreferrer" href={`https://github.com/${data.login}`}>https://github.com/{data.login}</a>
                     </div>
-                </Reveal></div>
+                </div>
     }
 }

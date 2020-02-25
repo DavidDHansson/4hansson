@@ -6,6 +6,7 @@ import Zoom from 'react-reveal/Zoom';
 import "./second.css";
 import mig from "./assets/mig.gif";
 import migstill from "./assets/migstill.jpg";
+import log from "components/Log/Log";
 
 import StartTitel from "./components/titel";
 import trans from "constants/lang";
@@ -27,7 +28,7 @@ export default function Second() {
         });
 
         return () => {
-            document.removeEventListener("scroll", () => {}, true);
+            document.removeEventListener("scroll", () => { }, true);
         };
     }, []);
 
@@ -39,26 +40,26 @@ export default function Second() {
 
     return (
         <div>
-        <div className="secondPar">
-            <Zoom>
-                <div className="secondWrapper">
-                    <div className="secondText">
-                        <StartTitel />
-                        <p style={{ fontSize: 20, textAlign: "justify" }}>
-                            {lang === trans.lang[0] && (trans.startTitelBes[0])}
-                            {lang === trans.lang[1] && (trans.startTitelBes[1])}
-                        </p>
+            <div className="secondPar">
+                <Zoom onReveal={() => log({ site: "Home", section: "2", time: "0" })}>
+                    <div className="secondWrapper">
+                        <div className="secondText">
+                            <StartTitel />
+                            <p style={{ fontSize: 20, textAlign: "justify" }}>
+                                {lang === trans.lang[0] && (trans.startTitelBes[0])}
+                                {lang === trans.lang[1] && (trans.startTitelBes[1])}
+                            </p>
+                        </div>
+                        <div id="gifStartTitle">
+                            <GifPlayer
+                                gif={mig}
+                                still={migstill}
+                                autoplay={true}
+                            />
+                        </div>
                     </div>
-                    <div id="gifStartTitle">
-                        <GifPlayer
-                            gif={mig}
-                            still={migstill}
-                            autoplay={true}
-                        />
-                    </div>
-                </div>
-            </Zoom>
-        </div>
+                </Zoom>
+            </div>
         </div>
     );
 }
