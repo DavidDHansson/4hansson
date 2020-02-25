@@ -12,10 +12,19 @@ import Navigation from "./components/Navigation/Navigation";
 import { LangProvider } from './components/LangContext/LangContext';
 
 
+import log from "./components/Log/Log"
+
 //https://reactjs.org/docs/context.html#dynamic-context
 
 
 class App extends React.Component {
+    componentDidMount() {
+        log({
+            site: "index.js",
+            section: "2",
+            time: "400"
+        });
+    }
     render() {
         return (
             <LangProvider>

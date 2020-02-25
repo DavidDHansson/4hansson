@@ -2,6 +2,7 @@
 
 # api keys and node path
 .env
+.env.staging
 
 # dependencies
 /node_modules
