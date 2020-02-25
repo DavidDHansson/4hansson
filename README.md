@@ -1,17 +1,9 @@
 
 
-## Portfolio hjemmeside
+## Portfolio website
 
-Portfolio hjemmeside lavet af David Hansson <br>
+My personal Portfolio website <br>
 
-[Projektet](http://4hansson.dk) kan tjekkes ud her.
+Check it out at [4hansson](http://4hansson.dk)
 
-
-## Stack
-
-- React.js
-    - Particle.js
-    - React Router
-- 
-- 
 
