@@ -10,7 +10,6 @@
         "react": "^16.11.0",
         "react-confetti": "^5.0.1",
         "react-dom": "^16.11.0",
-        "react-gif-player": "^0.4.2",
         "react-particles-js": "^2.7.0",
         "react-player": "^1.15.2",
         "react-reveal": "^1.2.2",

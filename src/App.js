@@ -22,7 +22,7 @@ class App extends React.Component {
                 <Router>
                     <Navigation changeLang={this.changeLang} />
                     <Switch>
-                        <Route path="/" exact component={Home} />
+                        <Route path="/" exact={true} component={Home} />
                         <Route path="/home" component={Home} />
                         <Route path="/projects" component={Projects} />
                         <Route path="/contact" component={Contact} />

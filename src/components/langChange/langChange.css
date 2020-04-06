@@ -1,13 +1,14 @@
 .flagParent {
     display: flex;
-    flex-direction: row;
-    width: 100%;
     justify-content: center;
+    align-items: center;
 }
 
 .flagChild {
     transition: 0.5s;
-    font-size: 40px;
+    width: 3rem;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .flagChild:hover {

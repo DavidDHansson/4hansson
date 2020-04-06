@@ -27,27 +27,29 @@ export default class ContactGitProfile extends React.Component {
             ? <div>Woops, an error occurred</div>
             : !isLoaded
                 ? <div>Loading...</div>
-                : <div className="contactGitProfileWrapper">
+                : <Reveal onReveal={() => log({ site: "Contact", section: "2"})}>
+                    <div className="contactGitProfileWrapper">
 
-                    <div><img src={data.avatar_url} className="contactGitProfileImg" alt="Github Avatar"/></div>
+                        <div><img src={data.avatar_url} className="contactGitProfileImg" alt="Github Avatar" /></div>
 
-                    <div style={{ height: "1ch" }}><p style={{ fontWeight: 700, fontSize: "30px" }}>{data.name}</p></div>
-                    <div style={{
-                        height: "1ch",
-                        paddingBottom: "2ch",
-                        borderBottom: "1px solid rgb(150, 150, 150)",
-                        width: "50%"
-                    }}><p style={{ color: "rgb(90, 90, 90)", fontSize: "26px" }}>{data.login}</p></div>
+                        <div style={{ height: "1ch" }}><p style={{ fontWeight: 700, fontSize: "30px" }}>{data.name}</p></div>
+                        <div style={{
+                            height: "1ch",
+                            paddingBottom: "2ch",
+                            borderBottom: "1px solid rgb(150, 150, 150)",
+                            width: "50%"
+                        }}><p style={{ color: "rgb(90, 90, 90)", fontSize: "26px" }}>{data.login}</p></div>
 
-                    <div style={{ height: "1ch", paddingBottom: "1ch" }}><p>{data.bio}</p></div>
+                        <div style={{ height: "1ch", paddingBottom: "1ch" }}><p>{data.bio}</p></div>
 
-                    <div style={{ height: "1ch" }}><p style={{ fontWeight: 700 }}>{data.company}</p></div>
-                    <div style={{ height: "1ch", paddingBottom: "3ch" }}><p>{data.location}</p></div>
+                        <div style={{ height: "1ch" }}><p style={{ fontWeight: 700 }}>{data.company}</p></div>
+                        <div style={{ height: "1ch", paddingBottom: "3ch" }}><p>{data.location}</p></div>
 
 
-                    <div style={{ height: "1ch" }} className="contactGitProfileLink">
-                        <a target="_blank" rel="noopener noreferrer" href={`https://github.com/${data.login}`}>https://github.com/{data.login}</a>
+                        <div style={{ height: "1ch" }} className="contactGitProfileLink">
+                            <a target="_blank" rel="noopener noreferrer" href={`https://github.com/${data.login}`}>https://github.com/{data.login}</a>
+                        </div>
                     </div>
-                </div>
+                </Reveal>
     }
 }

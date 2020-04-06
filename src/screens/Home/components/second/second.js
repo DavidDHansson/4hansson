@@ -1,11 +1,9 @@
 import React, { useContext, useEffect } from "react";
 
-import GifPlayer from "react-gif-player";
 import Zoom from 'react-reveal/Zoom';
 
 import "./second.css";
 import mig from "./assets/mig.gif";
-import migstill from "./assets/migstill.jpg";
 import log from "components/Log/Log";
 
 import StartTitel from "./components/titel";
@@ -18,11 +16,11 @@ export default function Second() {
     useEffect(() => {
         document.addEventListener("scroll", () => {
             const scroll = window.scrollY >= 10 && window.scrollY <= 1500;
+            const el = document.getElementById("gifStartTitle");
 
             if (scroll) {
                 const scale = mapRange(window.scrollY, 0, 1500, 0.8, 1);
-                const el = document.getElementById("gifStartTitle");
-
+                
                 el != null && (el.style.transform = `scale(${scale})`);
             }
         });
@@ -51,11 +49,7 @@ export default function Second() {
                             </p>
                         </div>
                         <div id="gifStartTitle">
-                            <GifPlayer
-                                gif={mig}
-                                still={migstill}
-                                autoplay={true}
-                            />
+                            <img src={mig} alt="Gif of David" width={window.innerWidth > 600 ? 600 : window.innerWidth - 100} />
                         </div>
                     </div>
                 </Zoom>
