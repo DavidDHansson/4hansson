@@ -4,6 +4,6 @@
 
 My personal Portfolio website <br>
 
-Check it out at [4hansson](http://4hansson.dk)
+Check it out at [4hansson](https://4hansson.dk)
 
 
