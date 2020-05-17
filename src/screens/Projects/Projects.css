@@ -1,0 +1,111 @@
+:root {
+    --projectsTimeLineButtonWork: #00A9A5;
+    --projectsTimeLineButtonSchool: #A15486;
+    --projectsTimeLineButtonNon: #23b5eb;
+}
+
+.projectsTitle {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 69px;
+    color: #92dce5;
+}
+
+.projectsMainWrapper {
+    background-color: rgb(230, 232, 236);
+    display: flex;
+    flex-direction: column;
+}
+
+.projectsTimelineWrapper {
+    background-color: rgb(230, 232, 236);
+}
+
+.projectsTitleWrapper {
+    padding-top: 150px;
+    height: 600px;
+    width: 100%;
+    padding-bottom: 200px;
+    text-align: center;
+    clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 80%, 0 65%, 0 0);
+    background-color: rgb(22, 30, 39);
+}
+
+.projectsTimelineImg {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    width: 100%;
+    height: 100%;
+}
+
+.projectsTimelineImgWrapper {
+    height: 65%;
+    width: 65%;
+    padding-top: 14%;
+    display: block;
+    margin: 0 auto;
+}
+
+.projectsTimelineButton {
+    width: 120px;
+    height: 33px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: linear 0.2s;
+    border-radius: 5px;
+    color: rgb(37, 88, 194);
+}
+
+.projectsTimelineButton:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.projectsTimelineButtonWork {
+    border: 2px solid var(--projectsTimeLineButtonWork);
+    color: var(--projectsTimeLineButtonWork);
+}
+
+.projectsTimelineButtonSchool {
+    border: 2px solid var(--projectsTimeLineButtonSchool);
+    color: var(--projectsTimeLineButtonSchool);
+}
+
+.projectsTimelineButtonNon {
+    border: 2px solid var(--projectsTimeLineButtonNon);
+    color: var(--projectsTimeLineButtonNon);
+}
+
+.projectsTimelineButtonWork:hover {
+    background-color: var(--projectsTimeLineButtonWork);
+}
+
+.projectsTimelineButtonSchool:hover {
+    background-color: var(--projectsTimeLineButtonSchool);
+}
+
+.projectsTimelineButtonNon:hover {
+    background-color: var(--projectsTimeLineButtonNon);
+}
+
+.projectsTimelineButtonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.projectsTimelineItem {
+    transition: linear 0.2s;
+}
+
+.projectsTimelineItem:hover {
+    transform: translateY(-2px);
+}

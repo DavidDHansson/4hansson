@@ -58,19 +58,129 @@
         "Kontakt Mig"
     ],
     "contactMainTypes": [
-        ["Location", "Email", "Phone", "LinkedIn"],
-        ["Lokalitet", "Email", "Telefon", "LinkedIn"]
+        [
+            "Location",
+            "Email",
+            "Phone",
+            "LinkedIn"
+        ],
+        [
+            "Lokalitet",
+            "Email",
+            "Telefon",
+            "LinkedIn"
+        ]
     ],
     "contactMainPhone": [
-        ["Call", "or", "write", ""],
-        ["Ring", "eller", "skriv", "til mig"]
+        [
+            "Call",
+            "or",
+            "write",
+            ""
+        ],
+        [
+            "Ring",
+            "eller",
+            "skriv",
+            "til mig"
+        ]
     ],
-    "TwitterTitle" : [
+    "TwitterTitle": [
         "David World Famous",
         "Verdenskendt"
     ],
     "contantGitTitle": [
         "Check out my latest update on 4hansson",
         "Tjek min seneste opdatering på 4hansson"
+    ],
+    "timeline": [
+        [
+            {
+                "title": "Position at Listen To News",
+                "subTitle": "2. G • 16 År Gammel",
+                "text": "Swift on Xcode",
+                "date": "Sep. 2019 - Present",
+                "type": "work",
+                "links": [{"title": "LTN Website", "URL": "https://listentonews.com"}, {"title": "LTN LinkedIn", "URL": "https://www.linkedin.com/company/listen-to-news/"}]
+            },
+            {
+                "title": "Fullstack Pakken",
+                "subTitle": "1. G • 15 - 16 År Gammel",
+                "text": "Databaser, MySQL, PHP, Fil share, messenger. UI React, React Native, CSS",
+                "date": "2018 - 2019",
+                "type": "",
+                "links": []
+            },
+            {
+                "title": "Education at NEXT Sukkertoppen HTX",
+                "subTitle": "1. G - 3. G • 15 - 18 Years Old",
+                "text": "Startet on a gymnassiet, HTX Computer science. prog b mat a, teknologi b, teknik fag",
+                "date": "2018 - 2021",
+                "type": "school",
+                "links": [{"title": "NEXT", "URL": "https://nextkbh.dk/gymnasier/sukkertoppen-gymnasium/htx/computer-science"}]
+            },
+            {
+                "title": "Websites",
+                "subTitle": "7th - 9th Grade • 12 - 15 Years old ",
+                "text": "HTML, CSS, JS websites, slot machine",
+                "date": "2015 - 2018",
+                "type": "",
+                "links": []
+            },
+            {
+                "title": "The beginning",
+                "subTitle": "4th Grade • 9 Years Old",
+                "text": ".bat files and c# book",
+                "date": "2012",
+                "type": "",
+                "links": []
+            }
+        ],
+        [
+            {
+                "title": "Stilling hos Listen To News",
+                "subTitle": "2. G • 16 År Gammel",
+                "text": "Swift på Xcode",
+                "date": "Sep. 2019 - Nu",
+                "type": "work",
+                "links": [{"title": "LTN Side", "URL": "https://listentonews.com"}, {"title": "LTN LinkedIn", "URL": "https://www.linkedin.com/company/listen-to-news/"}]
+            },
+            {
+                "title": "Fullstack Pakken",
+                "subTitle": "1. G • 15 - 16 År Gammel",
+                "text": "Databaser, MySQL, PHP, Fil share, messenger. UI React, React Native, CSS",
+                "date": "2018 - 2019",
+                "type": "",
+                "links": []
+            },
+            {
+                "title": "Uddanelse hos NEXT Sukkertoppen HTX",
+                "subTitle": "1. G - 3. G • 15 - 18 År Gammel",
+                "text": "Started på gymnassiet, HTX Computer science. prog b mat a, teknologi b, teknik fag",
+                "date": "2018 - 2021",
+                "type": "school",
+                "links": [{"title": "NEXT", "URL": "https://nextkbh.dk/gymnasier/sukkertoppen-gymnasium/htx/computer-science"}]
+            },
+            {
+                "title": "Hjemmesider",
+                "subTitle": "7. - 9. Klasse • 12 - 15 År Gammel",
+                "text": "HTML, CSS, JS, hjemmesider, slot machine",
+                "date": "2015 - 2018",
+                "type": "",
+                "links": []
+            },
+            {
+                "title": "Starten",
+                "subTitle": "4. Klasse • 9 År Gammel",
+                "text": ".bat filer ja og c# bog",
+                "date": "2012",
+                "type": "",
+                "links": []
+            }
+        ]
+    ],
+    "timeLineTitle": [
+        "My Timeline",
+        "Min Tidslinje"
     ]
 }

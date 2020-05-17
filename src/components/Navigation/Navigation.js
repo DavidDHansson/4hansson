@@ -17,8 +17,14 @@ export default function Navigation() {
             top ? nav.classList.add("scroll") : nav.classList.remove("scroll");
         });
 
+        window.addEventListener("resize", () => {
+            const nav = document.getElementById("nav");
+            nav.style.width = window.innerWidth;
+        });
+
         return () => {
             window.removeEventListener("scroll", () => { });
+            window.removeEventListener("resize", () => { });
         }
     }, []);
 
@@ -39,12 +45,12 @@ export default function Navigation() {
                     </div>
                 </Link>
 
-                {/* <Link className="navPChild" onClick={() => toTop()} to="/projects">
+                <Link className="navPChild" onClick={() => toTop()} to="/projects">
                     <div className="navDivChild">
                         {lang === trans.lang[0] && (trans.nav[0][1])}
                         {lang === trans.lang[1] && (trans.nav[1][1])}
                     </div>
-                </Link> */}
+                </Link>
 
                 <Link className="navPChild" onClick={() => toTop()} to="/contact">
                     <div className="navDivChild">
