@@ -41,7 +41,7 @@ function Item(props) {
         >
             <h3 className="vertical-timeline-element-title">{title}</h3>
             <h4 className="vertical-timeline-element-subtitle">{subTitle}</h4>
-            <p>{text}</p>
+            {/* <p>{text}</p> */}
             {displayLinks(links, type)}
         </VerticalTimelineElement>
     );
