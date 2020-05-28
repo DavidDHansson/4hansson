@@ -97,16 +97,16 @@
         [
             {
                 "title": "Position at Listen To News",
-                "subTitle": "2. G • 16 År Gammel",
-                "text": "Swift on Xcode",
+                "subTitle": "2. G • 16 Years Old",
+                "text": ["First positions as a developer! I joined the company Listen To news. Here I program Swift apps in Xcode. ", "With them, I have learned all about the startup environment and how it works."],
                 "date": "Sep. 2019 - Present",
                 "type": "work",
                 "links": [{"title": "LTN Website", "URL": "https://listentonews.com"}, {"title": "LTN LinkedIn", "URL": "https://www.linkedin.com/company/listen-to-news/"}]
             },
             {
                 "title": "Fullstack Pack",
-                "subTitle": "1. G • 15 - 16 År Gammel",
-                "text": "Databaser, MySQL, PHP, Fil share, messenger. UI React, React Native, CSS",
+                "subTitle": "1. G • 15 - 16 Years Old",
+                "text": ["To learn the principles behind databases and data structures, I read the book “Head First PHP & MySQL”. I created with my new knowledge a file sharing and a messaging -program.", "After that, I learned React JS as well as React Native and began on my new portfolio site (this site)."],
                 "date": "2018 - 2019",
                 "type": "",
                 "links": []
@@ -114,7 +114,7 @@
             {
                 "title": "Education at NEXT Sukkertoppen HTX",
                 "subTitle": "1. G - 3. G • 15 - 18 Years Old",
-                "text": "Startet on a gymnassiet, HTX Computer science. prog b mat a, teknologi b, teknik fag",
+                "text": ["I was tired of subjects like German, Social studies, History and more. That is why I chose a technical gymnasium – HTX (Higher Technical Examination) and the line Computer Science. On that line, we had more relevant subjects like programming, mathematics, technology and technical-subject."],
                 "date": "2018 - 2021",
                 "type": "school",
                 "links": [{"title": "NEXT", "URL": "https://nextkbh.dk/gymnasier/sukkertoppen-gymnasium/htx/computer-science"}]
@@ -122,7 +122,7 @@
             {
                 "title": "Websites",
                 "subTitle": "7th - 9th Grade • 12 - 15 Years old ",
-                "text": "HTML, CSS, JS websites, slot machine",
+                "text": ["The next things I learned were websites – HTML, CSS and JS. I read the book “Head First JavaScript Programming”. I of course made a portfolio site, and proudly showed it to everyone.", "The most known program I made was a “Slot machine” game, that got very famous at my school."],
                 "date": "2015 - 2018",
                 "type": "",
                 "links": []
@@ -130,7 +130,7 @@
             {
                 "title": "The beginning",
                 "subTitle": "4th Grade • 9 Years Old",
-                "text": ".bat files and c# book",
+                "text": ["I was introduced to programming in 4th grade through the school computers. Vi often got computers in the Danish lections, where I instead used my time on coding. Here I experimented with Batch files. I played around with the language and made programs such as “Who Wants To Be A Millionaire?”, colorful calculators and small games.", "I also looked at C# and read the book “C# Programming for Kids” with the now old program Visual Studio.Net 2008. Here I made games like “Hangman” and “Tic-Tac-Toe”."],
                 "date": "2012",
                 "type": "",
                 "links": []
@@ -140,7 +140,7 @@
             {
                 "title": "Stilling hos Listen To News",
                 "subTitle": "2. G • 16 År Gammel",
-                "text": "Swift på Xcode",
+                "text": ["Første stilling som udvikler! Jeg kom ind hos firmaet Listen To News. Her programmerer jeg Swift apps i Xcode. ", "Hos dem har jeg lært alt om startup miljøet og hvordan det fungerer."],
                 "date": "Sep. 2019 - Nu",
                 "type": "work",
                 "links": [{"title": "LTN Side", "URL": "https://listentonews.com"}, {"title": "LTN LinkedIn", "URL": "https://www.linkedin.com/company/listen-to-news/"}]
@@ -148,15 +148,15 @@
             {
                 "title": "Fullstack Pakken",
                 "subTitle": "1. G • 15 - 16 År Gammel",
-                "text": "Databaser, MySQL, PHP, Fil share, messenger. UI React, React Native, CSS",
+                "text": ["For at lære principperne bag databaser og datastrukturer læste jeg bogen ”Head First PHP & MySQL”. Jeg lavede med min nye viden et fil delings og et besked -program.", "Efter det lærte jeg React JS samt React Native, og begyndte på min nye portfolio side (denne side)."],
                 "date": "2018 - 2019",
                 "type": "",
                 "links": []
             },
             {
-                "title": "Uddanelse hos NEXT Sukkertoppen HTX",
+                "title": "Uddannelse hos NEXT Sukkertoppen HTX",
                 "subTitle": "1. G - 3. G • 15 - 18 År Gammel",
-                "text": "Started på gymnassiet, HTX Computer science. prog b mat a, teknologi b, teknik fag",
+                "text": ["Jeg var træt af fag som Tysk, Samfundsfag, Historie og mere. Derfor valgte jeg et teknisk gymnasium - HTX (Højre Teknisk Eksamen) og linjen Computer Science. På den linje havde vi mere relevante fag som programmering, matematik, teknologi og teknikfag."],
                 "date": "2018 - 2021",
                 "type": "school",
                 "links": [{"title": "NEXT", "URL": "https://nextkbh.dk/gymnasier/sukkertoppen-gymnasium/htx/computer-science"}]
@@ -164,7 +164,7 @@
             {
                 "title": "Hjemmesider",
                 "subTitle": "7. - 9. Klasse • 12 - 15 År Gammel",
-                "text": "HTML, CSS, JS, hjemmesider, slot machine",
+                "text": ["Det næste jeg lærte, var hjemmesider - HTML, CSS og JS. Jeg læste bogen ”Head First JavaScript Programming”. Jeg lavede selvfølgelig en portfolio side, og viste den stolt frem til alle :) ", "Mit mest kendte program jeg lavede, var et ”Slot machine” spil, som blev meget populært på min skole."],
                 "date": "2015 - 2018",
                 "type": "",
                 "links": []
@@ -172,7 +172,7 @@
             {
                 "title": "Starten",
                 "subTitle": "4. Klasse • 9 År Gammel",
-                "text": ".bat filer ja og c# bog",
+                "text": ["Jeg blev introduceret til programmering i 4. klasse igennem skolens computere. Vi fik ofte computere tildelt i dansk timerne, hvor jeg i stedet brugte min tid på at programmere. Her eksperimenterede jeg med Batch files. Jeg legede rundt med sproget og lavede programmer som ”Hvem vil være millionær?”, farverige lommeregnere og små spil.", "Jeg kiggede også på C# og læste bogen ”C# Programming for Kids” med det nu gamle program Visual Studio.Net 2008. Her lavede jeg spil som ”Hangman” og ”Kryds og bolle”"],
                 "date": "2012",
                 "type": "",
                 "links": []

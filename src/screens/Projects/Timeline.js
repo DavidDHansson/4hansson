@@ -19,8 +19,8 @@ function TimeLine() {
 
                     {
                         lang === trans.lang[0]
-                            ? trans.timeline[0].map(item => <Item data={item} />)
-                            : trans.timeline[1].map(item => <Item data={item} />)
+                            ? trans.timeline[0].map((item, index) => <Item data={item} key={index} />)
+                            : trans.timeline[1].map((item, index) => <Item data={item} key={index} />)
                     }
 
                 </VerticalTimeline>

@@ -7,7 +7,6 @@ import work from "./assets/work.svg";
 import school from "./assets/school.svg";
 import Icon from "./Icon";
 
-
 function Item(props) {
 
     const workAlt = "Work by Mello from the Noun Project";
@@ -41,7 +40,7 @@ function Item(props) {
         >
             <h3 className="vertical-timeline-element-title">{title}</h3>
             <h4 className="vertical-timeline-element-subtitle">{subTitle}</h4>
-            {/* <p>{text}</p> */}
+            {text.map(t => <p>{t}</p>)}
             {displayLinks(links, type)}
         </VerticalTimelineElement>
     );
