@@ -10,7 +10,7 @@ import log from "components/Log/Log";
 export default function Fourth() {
     return (
         <div className="fourthPar">
-            <Zoom onReveal={() => log({ site: "Home", section: "3", time: "0" })}>
+            <Zoom onReveal={() => log({ site: "Home", section: "3"})}>
                 <div className="fourthWrapper">
                     <Left />
                     <Right />

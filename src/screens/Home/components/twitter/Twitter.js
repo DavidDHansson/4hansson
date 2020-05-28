@@ -13,7 +13,7 @@ import log from "components/Log/Log";
 export default function Twitter() {
     return (
         <div className="mainTwitterWrapper">
-            <Zoom onReveal={() => log({ site: "Home", section: "5", time: "0" })}>
+            <Zoom onReveal={() => log({ site: "Home", section: "5"})}>
                 <Title />
                 <div className="mainTwitterFlex">
 

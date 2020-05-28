@@ -39,7 +39,7 @@ export default function Second() {
     return (
         <div>
             <div className="secondPar">
-                <Zoom onReveal={() => log({ site: "Home", section: "2", time: "0" })}>
+                <Zoom onReveal={() => log({ site: "Home", section: "2"})}>
                     <div className="secondWrapper">
                         <div className="secondText">
                             <StartTitel />

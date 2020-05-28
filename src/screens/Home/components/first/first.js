@@ -90,7 +90,7 @@ function Content() {
 
     return (
         <div>
-            <Pulse onReveal={() => log({ site: "Home", section: "1", time: "0" })}>
+            <Pulse onReveal={() => log({ site: "Home", section: "1"})}>
 
                 <div style={{ width: width - 100 }} className="mainFirstNamePhotoWrapper">
 

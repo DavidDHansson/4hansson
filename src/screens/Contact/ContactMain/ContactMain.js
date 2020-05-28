@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Zoom from 'react-reveal/Zoom';
+import Pulse from 'react-reveal/Pulse';
 import "./../Contact.css";
 
 import trans from "constants/lang.json";
@@ -18,7 +18,7 @@ export default function ContactMain() {
     const [lang] = useContext(LangContext);
 
     return (
-        <Zoom onReveal={() => log({ site: "Contact", section: "1", time: "0" })}>
+        <Pulse onReveal={() => log({ site: "Contact", section: "1"})}>
             <div className="contactMainWrapper" style={{ paddingTop: "250px", paddingBottom: "200px" }}>
 
                 <ContactMainTitle />
@@ -47,6 +47,6 @@ export default function ContactMain() {
                         width={20} title="LinkedIn" bes={["link", ["David Hansson", "https://www.linkedin.com/in/david-hansson-037717198/"]]} />
                 </div>
             </div>
-        </Zoom>
+        </Pulse>
     );
 }
