@@ -15,16 +15,19 @@ export default function Type(props) {
 
     return (
         <div className="contactMainTypes">
-            <div>
-                <img src={props.src[0]} style={{ width: `${props.width}%` }} alt={props.src[1]}/>
-            </div>
+
+            {/* Image */}
+            <img src={props.src[0]} style={{ height: `${90}px` }} alt={props.src[1]} />
+
+            {/* Title */}
             <h1 className="contantMainTypesTitle" style={{
                 fontSize: "30px",
                 fontWeight: "500px",
             }}>{props.title}</h1>
 
-            <div className="contactMainTypeBes" style={{lineHeight: "1.4"}}>
-                {/* Beskrivelse */}
+            {/* Info */}
+            <div className="contactMainTypeBes" style={{ lineHeight: "1.4" }}>
+                {/* Description */}
                 {props.bes[0] === "bes" && (
                     <div>
                         {props.bes[1][0]} <br />
@@ -37,20 +40,20 @@ export default function Type(props) {
                     <a target="_blank" rel="noopener noreferrer" href={`mailto:${props.bes[1][0]}`}>{props.bes[1][0]}</a>
                 )}
 
-                {/* Telefon */}
+                {/* Phone */}
                 {props.bes[0] === "phone" && (
-                    lang === trans.lang[0] 
-                    ? <div>
-                        {props.bes[1][0]} <br />                        
-                        <a className="link" href={`tel:${props.bes[1][0]}`}>{phoneText[0][0]}</a>{space}{phoneText[0][1]}{space}
-                        <a className="link" href={`sms:${props.bes[1][0]}`}>{phoneText[0][2]}</a>{space}{phoneText[0][3]}
-                    </div>
+                    lang === trans.lang[0]
+                        ? <div>
+                            {props.bes[1][0]} <br />
+                            <a className="link" href={`tel:${props.bes[1][0]}`}>{phoneText[0][0]}</a>{space}{phoneText[0][1]}{space}
+                            <a className="link" href={`sms:${props.bes[1][0]}`}>{phoneText[0][2]}</a>{space}{phoneText[0][3]}
+                        </div>
 
-                    : <div>
-                        {props.bes[1][0]} <br />                        
-                        <a className="link" href={`tel:${props.bes[1][0]}`}>{phoneText[1][0]}</a>{space}{phoneText[1][1]}{space}
-                        <a className="link" href={`sms:${props.bes[1][0]}`}>{phoneText[1][2]}</a>{space}{phoneText[1][3]}
-                    </div>
+                        : <div>
+                            {props.bes[1][0]} <br />
+                            <a className="link" href={`tel:${props.bes[1][0]}`}>{phoneText[1][0]}</a>{space}{phoneText[1][1]}{space}
+                            <a className="link" href={`sms:${props.bes[1][0]}`}>{phoneText[1][2]}</a>{space}{phoneText[1][3]}
+                        </div>
                 )}
 
                 {/* Link */}
