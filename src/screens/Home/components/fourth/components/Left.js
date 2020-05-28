@@ -9,7 +9,7 @@ export default function Left() {
             <img src={codedot} alt="Code Dot" style={{ width: "90%" }} />
             <br />
             <div style={{ position: "absolute", left: "50%" }}>
-                <div style={{ fontSize: "50px", position: "relative", left: "-50%"}}>
+                <div style={{ fontSize: "50px", position: "relative", left: "-50%", top: "100px"}}>
                     <Dot />
                 </div>
             </div>
