@@ -11,10 +11,6 @@ import Pulse from 'react-reveal/Pulse';
 function Title() {
     const [lang] = useContext(LangContext);
 
-    function getTitle() {
-        return lang === trans.lang[0] ? "no" : "yes";
-    }
-
     return (
         <div className="projectsTitleWrapper">
             <Pulse onReveal={() => log({ site: "Projects", section: "1" })}>
@@ -22,7 +18,7 @@ function Title() {
                     {lang === trans.lang[0] && (trans.timeLineTitle[0])}
                     {lang === trans.lang[1] && (trans.timeLineTitle[1])}
                 </p>
-                <img src={timeline} height="300" />
+                <img src={timeline} height="300" alt="Exams by unDraw"/>
             </Pulse>
         </div>
     );

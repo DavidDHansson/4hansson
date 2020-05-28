@@ -13,7 +13,7 @@ function HideOnSmall(props) {
         return () => {
             window.removeEventListener("resize", () => { });
         };
-    }, []);
+    });
 
     if (isHidden) {
         return <div> {props.children} </div>;
