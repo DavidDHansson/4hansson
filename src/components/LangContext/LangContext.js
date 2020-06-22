@@ -9,7 +9,7 @@ export const LangProvider = props => {
     const [lang, setLang] = useState("dk");
 
     useEffect(() => {
-        if (localStorage.getItem("lang") === null) {
+        if (localStorage.getItem("lang") !== null) {
             const saved = localStorage.getItem("lang");
             if (saved === "dk" || saved === "en") {
                 setLang(saved);

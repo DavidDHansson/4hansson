@@ -21,6 +21,10 @@
     width: 50%;
 }
 
+.contactGitProfileLink {
+    color: black;
+}
+
 .contactGitProfileLink :visited {
     color: black;
 }
