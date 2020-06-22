@@ -72,6 +72,10 @@
     background-color: rgb(37, 88, 194);
 }
 
+.contactGitProfileCommitWrapper {
+    padding-top: 0px;
+}
+
 @media screen and (max-width: 800px) {
     .contactGitWrapper {
         flex-direction: column;
@@ -81,6 +85,17 @@
         width: 70%;
     }
     .contactGitProfileCommitBox {
-        height: 150px;
+        height: 80px;
+        width: 100%;
+    }
+    .contactGitProfileCommitWrapper {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contactGitProfileCommitBox {
+        height: 100px;
+        width: 100%;
     }
 }

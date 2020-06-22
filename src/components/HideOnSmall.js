@@ -6,7 +6,7 @@ function HideOnSmall(props) {
 
     useEffect(() => {
         window.addEventListener("resize", () => {
-            console.log(window.innerWidth >= px);
+            // console.log(window.innerWidth >= px);
             setIsHidden(window.innerWidth >= px);
         });
 

@@ -18,8 +18,8 @@ export default function ContactGitInfo() {
 
     function displayLatest(msg, name, info, url) {
         return (
-            <div>
-                <p style={{ fontSize: 30, textAlign: "justify" }}>
+            <div className="contactGitProfileCommitWrapper">
+                <p style={{ fontSize: 30 }}>
                     {lang === trans.lang[0] && (trans.contantGitTitle[0])}
                     {lang === trans.lang[1] && (trans.contantGitTitle[1])}
                 </p>
