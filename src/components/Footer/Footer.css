@@ -14,3 +14,11 @@
 .footerChild {
     padding: 20px;
 }
+
+.footerLink {
+    color: white;
+}
+
+.footerLink:hover{
+    color: #92dce5;
+}

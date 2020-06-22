@@ -22,7 +22,11 @@
 }
 
 .contactGitProfileLink :visited {
-    color: black
+    color: black;
+}
+
+.contactGitProfileLink :hover {
+    color: #242424;
 }
 
 .contactGitProfileCommitBox {
@@ -97,3 +101,12 @@
         padding-top: 100px;
     }
 }
+
+
+/* .footerLink {
+    color: white;
+}
+
+.footerLink:hover{
+    color: #92dce5;
+} */

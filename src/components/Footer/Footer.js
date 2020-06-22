@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
             <div className="footerChild">
                 <p>Copyright © {d.getFullYear()} 4hansson.dk - All rights reserved</p>
-                <p>David Hansson - <a href="mailto:Hansson.d.david@gmail.com" className="link" >Hansson.d.david@gmail.com</a></p>
+                <p>David Hansson - <a href="mailto:Hansson.d.david@gmail.com" className="footerLink" >Hansson.d.david@gmail.com</a></p>
             </div>
         </div>
     );
