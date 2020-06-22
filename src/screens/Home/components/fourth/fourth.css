@@ -24,7 +24,7 @@
     padding: 10%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .fourthWrapper {
         flex-direction: column-reverse;
     }
