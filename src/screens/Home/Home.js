@@ -7,6 +7,7 @@ import Second from "./components/second/second";
 import Third from "./components/third/third";
 import Fourth from "./components/fourth/fourth";
 import Twitter from "./components/twitter/Twitter";
+import GuestBook from "./components/guestbook/GuestBook";
 import Footer from "components/Footer/Footer";
 
 export default class Home extends React.Component {
@@ -17,6 +18,7 @@ export default class Home extends React.Component {
                 <Second />
                 <Fourth />
                 <Third />
+                <GuestBook />
                 <Twitter />
                 <Footer />
             </div>

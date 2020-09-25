@@ -1,0 +1,13 @@
+.mainGuestBookWrapper {
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-color: rgb(32, 38, 46);
+}
+
+.guestBookwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
