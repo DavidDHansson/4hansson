@@ -1,13 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import "./GuestBook.css";
 import Sketch from "react-p5";
 import Flo from "./GuestBookTextCon.js";
 
 import Title from "./GuestBookTitle.js";
-import FloatText from "./GuestBookP5.js";
+import { SignIn, SignOut } from "./GuestBookUserFlow.js";
+
+import firebase from "components/Firebase.js";
+import "firebase/firestore";
+import "firebase/auth";
+
+import { useCollectionData } from 'react-firebase-hooks/firestore';
+import { useAuthState } from "react-firebase-hooks/auth";
+
+const auth = firebase.auth();
+const firestore = firebase.firestore();
+
 
 function GuestBook() {
+
+    const [user] = useAuthState(auth);
 
     function addMessageForCanvas(message) {
         queue = message;
@@ -44,10 +57,19 @@ function GuestBook() {
         <div className="mainGuestBookWrapper">
             <div className="guestBookwrapper">
                 <div className="guestBookChild" style={{ height: "500px", width: "700px", backgroundColor: "white" }}>
-                    <Sketch setup={setup} draw={draw} />
+                    { user && <Sketch setup={setup} draw={draw} /> }
                 </div>
                 <div>
                     <Title />
+                    
+                    USERSTATE: { user ? "Logged ind" : "Ikke logged ind" }
+
+                    <div style={{ padding: "10px" }}></div>
+
+                    { user ? <SignOut /> : <SignIn /> }
+
+                    <div style={{ padding: "10px" }}></div>
+
                     <button onClick={() => addMessageForCanvas("Test")}></button>
                 </div>
             </div>
