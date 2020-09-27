@@ -13,7 +13,7 @@ function Cell(props) {
     const { text, displayName, photoURL } = props.item;
 
     return (
-        <div className={`guestBookGridChild ${text.length >= 22 && "guestBookGridTicc"}`}>
+        <div className={`guestBookGridChild ${text.length > 70  && "guestBookGridTicc"}`}>
 
             <div className="guestBookGridTitle">{text}</div>
 
