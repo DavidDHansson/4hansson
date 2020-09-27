@@ -9,7 +9,7 @@ function Right(props) {
     const user = props.user;
 
     return (
-        <div>
+        <div style={{width: "50%" }}>
 
             <Title />
 
