@@ -9,22 +9,10 @@ function Right(props) {
     const user = props.user;
 
     return (
-        <div style={{width: "50%" }}>
-
-            <Title />
-
-            <div style={{ padding: "10px" }}></div>
-
-            USERSTATE: {user ? "Logged ind" : "Ikke logged ind"}
-
-            <div style={{ padding: "10px" }}></div>
-
+        <div className="guestBookRightWrapper">
+            <Title name={user ? user.displayName : undefined }/>
+            {user && <GuestBookInput />}
             {user ? <SignOut /> : <SignIn />}
-
-            <div style={{ padding: "10px" }}></div>
-
-            <GuestBookInput />
-
         </div>
     );
 }

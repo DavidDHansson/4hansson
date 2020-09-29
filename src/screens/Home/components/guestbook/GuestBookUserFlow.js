@@ -14,5 +14,5 @@ export function SignIn() {
 }
 
 export function SignOut() {
-    return auth.currentUser && <button onClick={() => auth.signOut()}>LOG UD!</button>
+    return auth.currentUser && <span onClick={() => auth.signOut()} className="guestBookLink">LOG UD!</span>
 }
