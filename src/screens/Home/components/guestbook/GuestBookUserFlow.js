@@ -26,5 +26,14 @@ export function SignIn() {
 }
 
 export function SignOut() {
-    return auth.currentUser && <span onClick={() => auth.signOut()} className="guestBookLink">LOG UD!</span>
+
+    const [lang] = useContext(LangContext);
+
+    if(lang === trans.lang[0]) {
+        return auth.currentUser && <span onClick={() => auth.signOut()} className="guestBookLink">{trans.GuestBookLogOut[0]}</span>
+    } else if(lang === trans.lang[1]) {
+        return auth.currentUser && <span onClick={() => auth.signOut()} className="guestBookLink">{trans.GuestBookLogOut[1]}</span>
+    } else {
+        return (<></>);
+    }
 }

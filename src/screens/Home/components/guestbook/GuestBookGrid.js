@@ -2,6 +2,7 @@ import React from 'react';
 
 function GuestBookGrid(props) {
 
+
     return (
         <div className="guestBookGrid">
             {props.messages && props.messages.reverse().map((item, index) => <Cell item={item} key={index} />)}
@@ -11,10 +12,10 @@ function GuestBookGrid(props) {
 
 export function Cell(props) {
 
-    const { text, displayName, photoURL } = props.item;
+    const { text, displayName, photoURL, color } = props.item;
 
     return (
-        <div className={`guestBookGridChild ${text && text.length > 70 && "guestBookGridTicc"}`} style={props.style}>
+        <div className={`guestBookGridChild ${text && text.length > 70 && "guestBookGridTicc"}`} style={{...{backgroundColor: color}, ...props.style}}>
 
             <div className="guestBookGridTitle">{text}</div>
 

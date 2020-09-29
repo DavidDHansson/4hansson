@@ -106,8 +106,12 @@
         "Log ind for at sende en besked"
     ],
     "GuestBookLogIn": [
-        "Log in!",
+        "Login!",
         "Log ind!"
+    ],
+    "GuestBookLogOut": [
+        "Logout!",
+        "Log Ud!"
     ],
     "timeline": [
         [

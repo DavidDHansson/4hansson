@@ -14,7 +14,9 @@ export default function Navigation() {
         window.addEventListener("scroll", () => {
             const top = window.scrollY > 400;
             const nav = document.getElementById("nav");
-            top ? nav.classList.add("scroll") : nav.classList.remove("scroll");
+            if(nav) {
+                top ? nav.classList.add("scroll") : nav.classList.remove("scroll");
+            }
         });
 
         window.addEventListener("resize", () => {

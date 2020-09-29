@@ -5,6 +5,7 @@ import "firebase/firestore";
 import "firebase/auth";
 
 import { Cell } from "./GuestBookGrid.js";
+import ColorSlider from "./GuestBookColorSlider.js";
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
@@ -14,6 +15,7 @@ function GuestBookInput() {
     const [formValue, setFormValue] = useState("");
     const [item, setItem] = useState({ text: "", displayName: auth.currentUser.displayName, photoURL: auth.currentUser.photoURL });
     const [style, setStyle] = useState({ width: "22ch" });
+    const [activeColor, setActiveColor] = useState("#56667A");
     const messagesRef = firestore.collection("beskeder");
 
     async function sendMessage(e) {
@@ -24,15 +26,21 @@ function GuestBookInput() {
         await messagesRef.add({
             text: formValue,
             createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+            color: activeColor,
             displayName, email, uid, photoURL, phoneNumber
         });
 
         setFormValue("");
+        setItem({
+            text: "",
+            displayName: displayName,
+            photoURL: photoURL
+        });
     }
 
     function typeEvent(value) {
 
-        const newStyle = { width: "22ch" };
+        const newStyle = { width: "22ch", backgroundColor: activeColor };
         if (value.length > 70) newStyle.height = "30ch";
         if (value.length > 150) newStyle.height = "33ch";
         setStyle(newStyle);
@@ -48,7 +56,10 @@ function GuestBookInput() {
         });
     }
 
-    const colors = ["#56667A", "#1D2F47", "#31517A", "#8BA5C7", "#28263B", "#2D3145", "#2D3E45", "#263A3B"];
+    function changeActiveColor(color) {
+        setActiveColor(color);
+        setStyle({...style, backgroundColor: color});
+    }
 
     return (
         <form onSubmit={sendMessage} className="guestBookRightInputWrapper">
@@ -58,6 +69,8 @@ function GuestBookInput() {
                 <input type="submit" disabled={!formValue} value="SEND" className="guestBookRightSendButton" />
             </div>
             
+            <ColorSlider change={changeActiveColor}/>
+
             <Cell item={item} style={style} />
         </form>
     );
