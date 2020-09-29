@@ -9,10 +9,12 @@ function Right(props) {
     const user = props.user;
 
     return (
-        <div className="guestBookRightWrapper">
-            <Title name={user ? user.displayName : undefined }/>
-            {user && <GuestBookInput />}
-            {user ? <SignOut /> : <SignIn />}
+        <div style={{ width: "50%" }}>
+            <div className="guestBookRightWrapper">
+                <Title name={user ? user.displayName : undefined} />
+                {user && <GuestBookInput />}
+                {user ? <SignOut /> : <SignIn />}
+            </div>
         </div>
     );
 }

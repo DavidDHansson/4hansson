@@ -101,6 +101,14 @@
         "Welcome ",
         "Velkommen "
     ],
+    "GuestBookLogInInfo": [
+        "Log in to post a message",
+        "Log ind for at sende en besked"
+    ],
+    "GuestBookLogIn": [
+        "Log in!",
+        "Log ind!"
+    ],
     "timeline": [
         [
             {

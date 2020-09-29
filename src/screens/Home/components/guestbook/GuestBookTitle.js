@@ -16,13 +16,18 @@ export default function GuestBookTitle(props) {
                 {lang === trans.lang[0] && (trans.GuestBookWelcome[0])}
                 {lang === trans.lang[1] && (trans.GuestBookWelcome[1])}
 
-                {props.name && (
+                {props.name ? (
                     <div>
                         <span>"</span>
                         <span style={{ fontStyle: "italic", color: "rgb(200, 200, 200)" }}>{props.name}</span>
                         <span>"</span>
                     </div>
-                )}
+                ) : (
+                        <div>
+                            {lang === trans.lang[0] && (trans.GuestBookLogInInfo[0])}
+                            {lang === trans.lang[1] && (trans.GuestBookLogInInfo[1])}
+                        </div>
+                    )}
 
             </p>
         </div>

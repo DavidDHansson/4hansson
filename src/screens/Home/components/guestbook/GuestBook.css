@@ -15,6 +15,15 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .guestBookRightInputFieldWrapper {
+        flex-direction: column;
+    }
+    .guestBookRightInput {
+        width: 100%;
+    }
+}
+
 @keyframes childEntrance {
     from {
         opacity: 0;
@@ -103,15 +112,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    width: 50%;
+    align-items: center;
+    width: 100%;
 }
 
 .guestBookRightInputWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .guestBookLink {
@@ -123,10 +133,48 @@
     white-space: -moz-nowrap;
     white-space: -nowrap;
     white-space: -o-nowrap;
-    word-wrap: none;   
+    word-wrap: none;
+    margin-top: 20px;
 }
 
 .guestBookLink:hover {
     color: #92dce5;
     cursor: pointer;
+}
+
+.guestBookRightInput {
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    width: 65%;
+    font-size: 13px;
+    height: 20px;
+}
+
+.guestBookRightSendButton {
+    min-width: 20%;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    transition: 0.2s;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.guestBookRightSendButton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.8);
+}
+
+.guestBookRightInputFieldWrapper {
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
 }

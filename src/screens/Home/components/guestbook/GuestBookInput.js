@@ -11,12 +11,9 @@ const firestore = firebase.firestore();
 
 function GuestBookInput() {
 
-    // CAP ER 200
-    // MIN ER under 70
-
     const [formValue, setFormValue] = useState("");
-    const [item, setItem] = useState({});
-    const [style, setStyle] = useState({ width: "22ch", height: "15ch" });
+    const [item, setItem] = useState({ text: "", displayName: auth.currentUser.displayName, photoURL: auth.currentUser.photoURL });
+    const [style, setStyle] = useState({ width: "22ch" });
     const messagesRef = firestore.collection("beskeder");
 
     async function sendMessage(e) {
@@ -36,8 +33,8 @@ function GuestBookInput() {
     function typeEvent(value) {
 
         const newStyle = { width: "22ch" };
-        if(value.length < 70) newStyle.height = "15ch";
-        if(value.length > 70) newStyle.height = "30ch";
+        if (value.length > 70) newStyle.height = "30ch";
+        if (value.length > 150) newStyle.height = "33ch";
         setStyle(newStyle);
 
         setFormValue(value.length > 200 ? value.substring(0, 200) : value);
@@ -45,17 +42,23 @@ function GuestBookInput() {
         const { photoURL, displayName } = auth.currentUser;
 
         setItem({
-            text: value,
+            text: value.length > 200 ? value.substring(0, 200) : value,
             displayName: displayName,
             photoURL: photoURL
         });
     }
 
+    const colors = ["#56667A", "#1D2F47", "#31517A", "#8BA5C7", "#28263B", "#2D3145", "#2D3E45", "#263A3B"];
+
     return (
         <form onSubmit={sendMessage} className="guestBookRightInputWrapper">
-            <input value={formValue} onChange={e => typeEvent(e.target.value)} placeholder="Skriv en besked!" />
-            <input type="submit" disabled={!formValue} value="Send!"/>
-            <Cell item={item} style={style}/> 
+
+            <div className="guestBookRightInputFieldWrapper">
+                <input value={formValue} onInput={e => typeEvent(e.target.value)} placeholder="Nice Page!" className="guestBookRightInput" />
+                <input type="submit" disabled={!formValue} value="SEND" className="guestBookRightSendButton" />
+            </div>
+            
+            <Cell item={item} style={style} />
         </form>
     );
 }
