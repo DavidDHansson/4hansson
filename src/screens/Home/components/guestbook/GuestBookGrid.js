@@ -15,7 +15,7 @@ export function Cell(props) {
     const { text, displayName, photoURL, color } = props.item;
 
     return (
-        <div className={`guestBookGridChild ${text && text.length > 70 && "guestBookGridTicc"}`} style={{...{backgroundColor: color}, ...props.style}}>
+        <div className={`guestBookGridChild ${text && text.length > 70 && "guestBookGridTicc"}`} style={{ ...{ backgroundColor: color }, ...props.style }}>
 
             <div className="guestBookGridTitle">{text}</div>
 

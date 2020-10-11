@@ -71,7 +71,9 @@ function GuestBookInput() {
             
             <ColorSlider change={changeActiveColor}/>
 
-            <Cell item={item} style={style} />
+            <div style={{height: "300px"}}>
+                <Cell item={item} style={style} />
+            </div>
         </form>
     );
 }
