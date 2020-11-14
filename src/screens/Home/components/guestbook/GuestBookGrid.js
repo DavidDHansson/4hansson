@@ -15,8 +15,14 @@ export function Cell(props) {
     function convertDate(inputFormat) {
         function pad(s) { return (s < 10) ? '0' + s : s; }
         var d = new Date(inputFormat)
-        return [pad(d.getDate()), pad(d.getMonth()+1), d.getFullYear()].join('/')
-      }
+        return [pad(d.getDate()), pad(d.getMonth() + 1), d.getFullYear()].join('/')
+    }
+
+    function date(createdAt) {
+        if (createdAt === undefined || createdAt === null) { return "00/00/2020" }
+        const date = convertDate(createdAt.toDate())
+        return <div>{date}</div>
+    }
 
     return (
         <div className={`guestBookGridChild ${text && text.length > 70 && "guestBookGridTicc"}`} style={{ ...{ backgroundColor: color }, ...props.style }}>
@@ -26,7 +32,7 @@ export function Cell(props) {
             <div className="guestBookGridBottom">
                 <div className="guestBookGridBottomText">
                     <div>{displayName}</div>
-                    <div>{createdAt !== undefined ? convertDate(createdAt.toDate()) : "00/00/2020" }</div>
+                    {date(createdAt)}
                 </div>
                 <img src={photoURL} alt="Profile" className="guestBookGridBottomImg" />
             </div>
