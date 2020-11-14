@@ -19,7 +19,7 @@ function GuestBook() {
     const messagesRef = firestore.collection("beskeder");
     const query = messagesRef.orderBy("createdAt").limit(25);
     const [messages] = useCollectionData(query, { idField: "id" })
-
+    
     const [user] = useAuthState(auth);
 
     return (
