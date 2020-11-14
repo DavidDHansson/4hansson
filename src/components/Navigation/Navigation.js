@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 
-import "./navigation.css";
+import "./Navigation.css";
 import { Link } from "react-router-dom";
 import smoothscroll from 'smoothscroll-polyfill';
 
