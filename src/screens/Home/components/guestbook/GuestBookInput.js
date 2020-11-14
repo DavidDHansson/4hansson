@@ -4,6 +4,8 @@ import firebase from "components/Firebase.js";
 import "firebase/firestore";
 import "firebase/auth";
 
+import BadWordsFilter from "bad-words";
+
 import { Cell } from "./GuestBookGrid.js";
 import ColorSlider from "./GuestBookColorSlider.js";
 
@@ -17,14 +19,17 @@ function GuestBookInput() {
     const [style, setStyle] = useState({ width: "22ch" });
     const [activeColor, setActiveColor] = useState("#56667A");
     const messagesRef = firestore.collection("beskeder");
+    const filter = new BadWordsFilter({placeholder: "*"});    
 
     async function sendMessage(e) {
         e.preventDefault();
 
         const { uid, photoURL, displayName, phoneNumber, email } = auth.currentUser;
 
+        const message = filter.clean(formValue);
+
         await messagesRef.add({
-            text: formValue,
+            text: message,
             createdAt: firebase.firestore.FieldValue.serverTimestamp(),
             color: activeColor,
             displayName, email, uid, photoURL, phoneNumber
@@ -48,9 +53,10 @@ function GuestBookInput() {
         setFormValue(value.length > 200 ? value.substring(0, 200) : value);
 
         const { photoURL, displayName } = auth.currentUser;
+        const message = filter.clean(value)
 
         setItem({
-            text: value.length > 200 ? value.substring(0, 200) : value,
+            text: message.length > 200 ? message.substring(0, 200) : message,
             displayName: displayName,
             photoURL: photoURL
         });
