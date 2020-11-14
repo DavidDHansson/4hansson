@@ -26,7 +26,7 @@ export function Cell(props) {
             <div className="guestBookGridBottom">
                 <div className="guestBookGridBottomText">
                     <div>{displayName}</div>
-                    <div>{createdAt != undefined ? convertDate(createdAt.toDate()) : "00/00/2020" }</div>
+                    <div>{createdAt !== undefined ? convertDate(createdAt.toDate()) : "00/00/2020" }</div>
                 </div>
                 <img src={photoURL} alt="Profile" className="guestBookGridBottomImg" />
             </div>
