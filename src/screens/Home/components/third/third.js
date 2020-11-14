@@ -13,10 +13,10 @@ export default function Third() {
     const [display, setDisplay] = useState(false);
     const [active, setActive] = useState(null);
     const lang = [
-        { titel: "React (Native) & JavaScript", keyFrame: "thirdjsAni", width: 100, rating: 10 },
-        { titel: "Swift", keyFrame: "thirdSwiftAni", width: 90, rating: 9 },
-        { titel: "PHP & MySQL", keyFrame: "thirdphpAni", width: 70, rating: 7 },
-        { titel: "CSS", keyFrame: "thirdcssAni", width: 65, rating: 6 }
+        { titel: "Swift", keyFrame: "thirdSwiftAni", width: 100, rating: 10 },
+        { titel: "React (Native) & JavaScript", keyFrame: "thirdjsAni", width: 90, rating: 9 },
+        { titel: "CSS", keyFrame: "thirdcssAni", width: 70, rating: 7 },
+        { titel: "PHP & MySQL", keyFrame: "thirdphpAni", width: 40, rating: 4 }
     ]
     const tid = 2
 

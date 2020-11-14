@@ -20,8 +20,8 @@
         "Hej, Velkommen"
     ],
     "startTitelBes": [
-        "My name is David Hansson, and I’m 17 years old. My everyday life consists of school, where I’m currently in my second year, under the branch HTX. We have a focus on programming and technology on my line, which has always been one of my big passions since a young age. ",
-        "Mit navn er David Hansson og jeg er 17 år gammel. Til dagligt går jeg i 2.g, under grenen HTX. På min linje har vi fokus på programmering og teknologi, hvilket har været en af mine store passioner siden en ung alder."
+        "My name is David Hansson, and I’m 18 years old. My everyday life consists of school, where I’m currently in my third year, under the branch HTX. We have a focus on programming and technology on my line, which has always been one of my big passions since a young age. ",
+        "Mit navn er David Hansson og jeg er 18 år gammel. Til dagligt går jeg i 3.g, under grenen HTX. På min linje har vi fokus på programmering og teknologi, hvilket har været en af mine store passioner siden en ung alder."
     ],
     "skillsInfo": [
         "What can I do?",
@@ -29,16 +29,16 @@
     ],
     "skillsBes": [
         [
-            "JavaScript was my beginner language. I began learning at the age of 14, shortly after discovering and learning HTML. I learned 2 years after the Framework React, that 4hansson.dk also is built on. I have developed 2 apps in React Native, that both are released on Google Play. ",
             "I first learned Swift as a 17-year-old. I got my first Swift-intern job, with zero Swift knowledge. I worked with the app and company Listen To News for 1 year.",
-            "The second language I learned was PHP. It gave me an understanding of what web development was about. It was also my first insight into SQL-databases. I learned this language as a 15-year-old.",
-            "I learned CSS under my HTML/JavaScript time and under the development of my first apps (in React Native). I have since then used more time on CSS under the development of 4hansson.dk."
+            "JavaScript was my beginner language. I began learning at the age of 14, shortly after discovering and learning HTML. I learned 2 years after the Framework React, that 4hansson.dk also is built on. I have developed 2 apps in React Native, that both are released on Google Play. ",
+            "I learned CSS under my HTML/JavaScript time and under the development of my first apps (in React Native). I have since then used more time on CSS under the development of 4hansson.dk.",
+            "The second language I learned was PHP. It gave me an understanding of what web development was about. It was also my first insight into SQL-databases. I learned this language as a 15-year-old."
         ],
         [
-            "JavaScript var mit begyndersprog. Jeg begyndte at lære det som 14-årig. Jeg lærte 2 år efter Frameworket React, som 4hansson.dk er udviklet på. Jeg har udviklet 2 apps i React Native, som begge er udgivet på Google Play. ",
             "Jeg lærte først Swift som 17-årig. Jeg fik mit første swift-praktikant job, med nul Swift erfaring. Jeg arbejdede med appen og firmaet Listen To News gennem 1 år.",
-            "Det andet sprog jeg lærte, var PHP. Det gav mig forståelse for hvordan web udvikling virkelig foregik. Det var også mit første indblik på SQL-databaser. Jeg lærte dette sprog som 15-årig.",
-            "Jeg lærte CSS under min HTML/JavaScript tid og under udviklingen af mine første apps (i React Native). Har efterfølgende brugt mere tid på css under udviklingen af 4hansson.dk."
+            "JavaScript var mit begyndersprog. Jeg begyndte at lære det som 14-årig. Jeg lærte 2 år efter Frameworket React, som 4hansson.dk er udviklet på. Jeg har udviklet 2 apps i React Native, som begge er udgivet på Google Play. ",
+            "Jeg lærte CSS under min HTML/JavaScript tid og under udviklingen af mine første apps (i React Native). Har efterfølgende brugt mere tid på css under udviklingen af 4hansson.dk.",
+            "Det andet sprog jeg lærte, var PHP. Det gav mig forståelse for hvordan web udvikling virkelig foregik. Det var også mit første indblik på SQL-databaser. Jeg lærte dette sprog som 15-årig."
         ]
     ],
     "langInfo": [
@@ -116,16 +116,24 @@
     "timeline": [
         [
             {
+                "title": "Position at Tiimo",
+                "subTitle": "3.G • 17 Years Old",
+                "text": ["Frontend developer at Tiimo. Here I develop in the language Swift working on the wonderful app Tiimo."],
+                "date": "Oct. 2020 - Present",
+                "type": "work",
+                "links": [{"title": "Tiimo Website", "URL": "https://www.tiimoapp.com"}, {"title": "Tiimo LinkedIn", "URL": "https://www.linkedin.com/company/tiimo"}]
+            },
+            {
                 "title": "Position at Listen To News",
-                "subTitle": "2. G • 16 Years Old",
+                "subTitle": "2.G • 16 Years Old",
                 "text": ["First positions as a developer! I joined the company Listen To news. Here I program Swift apps in Xcode. ", "With them, I have learned all about the startup environment and how it works."],
-                "date": "Sep. 2019 - Present",
+                "date": "Sep. 2019 - Oct. 2020",
                 "type": "work",
                 "links": [{"title": "LTN Website", "URL": "https://listentonews.com"}, {"title": "LTN LinkedIn", "URL": "https://www.linkedin.com/company/listen-to-news/"}]
             },
             {
                 "title": "Fullstack Pack",
-                "subTitle": "1. G • 15 - 16 Years Old",
+                "subTitle": "1.G • 15 - 16 Years Old",
                 "text": ["To learn the principles behind databases and data structures, I read the book “Head First PHP & MySQL”. I created with my new knowledge a file sharing and a messaging -program.", "After that, I learned React JS as well as React Native and began on my new portfolio site (this site)."],
                 "date": "2018 - 2019",
                 "type": "",
@@ -133,7 +141,7 @@
             },
             {
                 "title": "Education at NEXT Sukkertoppen HTX",
-                "subTitle": "1. G - 3. G • 15 - 18 Years Old",
+                "subTitle": "1.G - 3.G • 15 - 18 Years Old",
                 "text": ["I was tired of subjects like German, Social studies, History and more. That is why I chose a technical gymnasium – HTX (Higher Technical Examination) and the line Computer Science. On that line, we had more relevant subjects like programming, mathematics, technology and technical-subject."],
                 "date": "2018 - 2021",
                 "type": "school",
@@ -158,16 +166,24 @@
         ],
         [
             {
+                "title": "Stilling hos Tiimo",
+                "subTitle": "3.G • 17 År Gammel",
+                "text": ["Frontend udvikler hos Tiimo. Her udvikler jeg i sproget Swift,  hvor jeg arbejder på det vidunderlige app Tiimo."],
+                "date": "Oct. 2020 - Nu",
+                "type": "work",
+                "links": [{"title": "Tiimo Side", "URL": "https://www.tiimoapp.com"}, {"title": "Tiimo LinkedIn", "URL": "https://www.linkedin.com/company/tiimo"}]
+            },
+            {
                 "title": "Stilling hos Listen To News",
-                "subTitle": "2. G • 16 År Gammel",
+                "subTitle": "2.G • 16 År Gammel",
                 "text": ["Første stilling som udvikler! Jeg kom ind hos firmaet Listen To News. Her programmerer jeg Swift apps i Xcode. ", "Hos dem har jeg lært alt om startup miljøet og hvordan det fungerer."],
-                "date": "Sep. 2019 - Nu",
+                "date": "Sep. 2019 - Oct. 2020",
                 "type": "work",
                 "links": [{"title": "LTN Side", "URL": "https://listentonews.com"}, {"title": "LTN LinkedIn", "URL": "https://www.linkedin.com/company/listen-to-news/"}]
             },
             {
                 "title": "Fullstack Pakken",
-                "subTitle": "1. G • 15 - 16 År Gammel",
+                "subTitle": "1.G • 15 - 16 År Gammel",
                 "text": ["For at lære principperne bag databaser og datastrukturer læste jeg bogen ”Head First PHP & MySQL”. Jeg lavede med min nye viden et fil delings og et besked -program.", "Efter det lærte jeg React JS samt React Native, og begyndte på min nye portfolio side (denne side)."],
                 "date": "2018 - 2019",
                 "type": "",
@@ -175,7 +191,7 @@
             },
             {
                 "title": "Uddannelse hos NEXT Sukkertoppen HTX",
-                "subTitle": "1. G - 3. G • 15 - 18 År Gammel",
+                "subTitle": "1.G - 3.G • 15 - 18 År Gammel",
                 "text": ["Jeg var træt af fag som Tysk, Samfundsfag, Historie og mere. Derfor valgte jeg et teknisk gymnasium - HTX (Højre Teknisk Eksamen) og linjen Computer Science. På den linje havde vi mere relevante fag som programmering, matematik, teknologi og teknikfag."],
                 "date": "2018 - 2021",
                 "type": "school",

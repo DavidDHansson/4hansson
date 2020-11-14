@@ -48,10 +48,10 @@
     cursor: help;
 }
 
-@keyframes thirdjsAni          { from { width: 0%; } to { width: 100%; } }
-@keyframes thirdcssAni         { from { width: 0%; } to { width: 65%; } }
-@keyframes thirdphpAni         { from { width: 0%; } to { width: 70%; } }
-@keyframes thirdSwiftAni       { from { width: 0%; } to { width: 90%; } }
+@keyframes thirdjsAni          { from { width: 0%; } to { width: 90%; } }
+@keyframes thirdcssAni         { from { width: 0%; } to { width: 70%; } }
+@keyframes thirdphpAni         { from { width: 0%; } to { width: 40%; } }
+@keyframes thirdSwiftAni       { from { width: 0%; } to { width: 100%; } }
 
 @media screen and (max-width: 600px) {
     .thirdParent {
