@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import "./langChange.css";
 
 import { LangContext } from "../LangContext/LangContext";

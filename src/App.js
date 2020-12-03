@@ -8,28 +8,33 @@ import Projects from "./screens/Projects/Projects";
 import Contact from "./screens/Contact/Contact";
 import NotFound from "./screens/NotFound/NotFound";
 
+// Nav bar
 import Navigation from "./components/Navigation/Navigation";
+
+// Context
 import { LangProvider } from './components/LangContext/LangContext';
 
-
-//https://reactjs.org/docs/context.html#dynamic-context
+// From Https to Https
+import HttpsRedirect from 'react-https-redirect';
 
 
 class App extends React.Component {
     render() {
         return (
-            <LangProvider>
-                <Router>
-                    <Navigation changeLang={this.changeLang} />
-                    <Switch>
-                        <Route path="/" exact={true} component={Home} />
-                        <Route path="/home" component={Home} />
-                        <Route path="/projects" component={Projects} />
-                        <Route path="/contact" component={Contact} />
-                        <Route component={NotFound} />
-                    </Switch>
-                </Router>
-            </LangProvider>
+            <HttpsRedirect>
+                <LangProvider>
+                    <Router>
+                        <Navigation changeLang={this.changeLang} />
+                        <Switch>
+                            <Route path="/" exact={true} component={Home} />
+                            <Route path="/home" component={Home} />
+                            <Route path="/projects" component={Projects} />
+                            <Route path="/contact" component={Contact} />
+                            <Route component={NotFound} />
+                        </Switch>
+                    </Router>
+                </LangProvider>
+            </HttpsRedirect>
         );
     }
 }

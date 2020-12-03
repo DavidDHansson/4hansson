@@ -15,7 +15,6 @@ export function SignIn() {
         auth.signInWithPopup(provider);
     }
 
-
     if(lang === trans.lang[0]) {
         return !auth.currentUser && <input type="button" onClick={signInWithGoogle} value={trans.GuestBookLogIn[0]} className="guestBookRightSendButton" />
     } else if(lang === trans.lang[1]) {
