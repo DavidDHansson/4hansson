@@ -14,7 +14,7 @@ import Navigation from "./components/Navigation/Navigation";
 // Context
 import { LangProvider } from './components/LangContext/LangContext';
 
-// From Https to Https
+// From Http to Https
 import HttpsRedirect from 'react-https-redirect';
 
 
