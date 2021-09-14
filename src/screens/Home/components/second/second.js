@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 import "./second.css";
 import mig from "./assets/mig.gif";
@@ -39,7 +39,7 @@ export default function Second() {
     return (
         <div>
             <div className="secondPar">
-                <Zoom onReveal={() => log({ site: "Home", section: "2"})}>
+                <Fade onReveal={() => log({ site: "Home", section: "2"})}>
                     <div className="secondWrapper">
                         <div className="secondText">
                             <StartTitel />
@@ -52,7 +52,7 @@ export default function Second() {
                             <img src={mig} alt="Gif of David" width={window.innerWidth > 600 ? 600 : window.innerWidth - 100} />
                         </div>
                     </div>
-                </Zoom>
+                </Fade>
             </div>
         </div>
     );

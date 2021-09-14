@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
-import Pulse from 'react-reveal/Pulse';
+
+import Fade from 'react-reveal/Fade';
+
 import "./../Contact.css";
 
 import trans from "constants/lang.json";
@@ -18,7 +20,7 @@ export default function ContactMain() {
     const [lang] = useContext(LangContext);
 
     return (
-        <Pulse onReveal={() => log({ site: "Contact", section: "1"})}>
+        <Fade onReveal={() => log({ site: "Contact", section: "1"})}>
             <div className="contactMainWrapper" style={{ paddingTop: "250px", paddingBottom: "200px" }}>
 
                 <ContactMainTitle />
@@ -41,10 +43,17 @@ export default function ContactMain() {
                         bes={["phone", ["+45 60 62 16 38"]]}
                     />
 
-                    <Type src={[work, "Work by Jaclyne Ooi from the Noun Project"]}
-                        title="LinkedIn" bes={["link", ["David Hansson", "https://www.linkedin.com/in/david-hansson-037717198/"]]} />
+                    <Type 
+                        src={[work, "Work by Jaclyne Ooi from the Noun Project"]}
+                        title={lang === trans.lang[0] ? trans.contactMainTypes[0][3] : trans.contactMainTypes[1][3]}
+                        bes={["link", [
+                            ["LinkedIn", "https://www.linkedin.com/in/david-domingo-hansson-037717198/"],
+                            ["Github", "https://github.com/DavidDHansson"],
+                            ["App Store", "https://apps.apple.com/dk/developer/david-hansson/id1563711987"]
+                        ]]}
+                    />
                 </div>
             </div>
-        </Pulse>
+        </Fade>
     );
 }

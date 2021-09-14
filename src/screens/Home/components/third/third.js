@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 import "./third.css";
 
@@ -22,7 +22,7 @@ export default function Third() {
 
     return (
         <div className="thirdTop">
-            <Zoom onReveal={() => {
+            <Fade onReveal={() => {
                 setDisplay(true);
                 log({ site: "Home", section: "4", time: "0" });
             }}>
@@ -50,7 +50,7 @@ export default function Third() {
                         ))}
                     </div>
                 </div>
-            </Zoom>
+            </Fade>
         </div>
     );
 

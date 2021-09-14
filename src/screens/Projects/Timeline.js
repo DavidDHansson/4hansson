@@ -4,7 +4,7 @@ import { VerticalTimeline } from 'react-vertical-timeline-component';
 import Item from "./TimelineItem";
 
 import log from "components/Log/Log";
-import Reveal from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 import trans from "constants/lang.json";
 import { LangContext } from "components/LangContext/LangContext.js";
@@ -13,7 +13,7 @@ function TimeLine() {
     const [lang] = useContext(LangContext);
 
     return (
-        <Reveal onReveal={() => log({ site: "Projects", section: "2" })}>
+        <Fade onReveal={() => log({ site: "Projects", section: "2" })}>
             <div className="projectsTimelineWrapper">
                 <VerticalTimeline>
 
@@ -25,7 +25,7 @@ function TimeLine() {
 
                 </VerticalTimeline>
             </div>
-        </Reveal>
+        </Fade>
     );
 }
 

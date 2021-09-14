@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect } from "react";
 
 import Particles from "./Particles";
-import Pulse from 'react-reveal/Pulse';
+import Fade from 'react-reveal/Fade';
 import Fire from "./Firework";
 
 import David from "./david.jpg";
@@ -59,13 +59,10 @@ export default class First extends React.Component {
     render() {
         return (
             <div>
-
-
                 <Fire go={this.state.fire} />
                 <div className="mainFirstParticles">
                     <Particles />
                 </div>
-
                 <Content />
             </div>
         );
@@ -90,7 +87,7 @@ function Content() {
 
     return (
         <div>
-            <Pulse onReveal={() => log({ site: "Home", section: "1"})}>
+            <Fade onReveal={() => log({ site: "Home", section: "1"})}>
 
                 <div style={{ width: width - 100 }} className="mainFirstNamePhotoWrapper">
 
@@ -98,17 +95,20 @@ function Content() {
                         <span className="navNavn">D</span>
                         avid<span> </span>
                         {width <= 480 && (<div><br /> <br /></div>)}
+                        <span className="navNavn">D</span>
+                        omingo<span> </span>
+                        <div style={{padding: "30px"}}></div>
                         <span className="navNavn">H</span>
                         ansson
                     </div>
 
                     <div className="mainFirstPhotoWrapper navNavn">
-                        <img src={David} className="mainFirstPhoto" alt="David Hansson"/>
+                        <img src={David} className="mainFirstPhoto" alt="David Domingo Hansson"/>
                     </div>
 
                 </div>
 
-            </Pulse>
+            </Fade>
 
             <div style={{ paddingTop: (height * 0.9) }}></div>
         </div>

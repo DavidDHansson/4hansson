@@ -37,7 +37,9 @@ export default function Type(props) {
 
                 {/* Email */}
                 {props.bes[0] === "email" && (
-                    <a target="_blank" rel="noopener noreferrer" href={`mailto:${props.bes[1][0]}`}>{props.bes[1][0]}</a>
+                    <div>
+                        <a target="_blank" rel="noopener noreferrer" href={`mailto:${props.bes[1][0]}`}>{props.bes[1][0]}</a>
+                    </div>
                 )}
 
                 {/* Phone */}
@@ -58,7 +60,9 @@ export default function Type(props) {
 
                 {/* Link */}
                 {props.bes[0] === "link" && (
-                    <a target="_blank" rel="noopener noreferrer" href={props.bes[1][1]}>{props.bes[1][0]}</a>
+                        <div style={{display: "flex", flexDirection: "column"}}>
+                            {props.bes[1].map(link => <a target="_blank" rel="noopener noreferrer" href={link[1]}>{link[0]}</a>)}
+                        </div>
                 )}
             </div>
         </div>

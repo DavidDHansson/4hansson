@@ -1,5 +1,8 @@
 import React, { useEffect, useState, useContext } from "react";
 
+import Fade from 'react-reveal/Fade';
+
+
 import trans from "constants/lang";
 import { LangContext } from "components/LangContext/LangContext";
 
@@ -12,29 +15,31 @@ export default function ContactGitInfo() {
     useEffect(() => {
         fetch("https://api.github.com/repos/daviddhansson/4hansson/commits/master")
             .then(res => res.json())
-            .then(json => { setData(json); setState(true) })
+            .then(json => { console.log(" idk" + json.commit.message);setData(json); setState(true) })
             .catch(() => setState(false));
     }, []);
 
     function displayLatest(msg, name, info, url) {
         return (
-            <div className="contactGitProfileCommitWrapper">
-                <p style={{ fontSize: 30 }}>
-                    {lang === trans.lang[0] && (trans.contantGitTitle[0])}
-                    {lang === trans.lang[1] && (trans.contantGitTitle[1])}
-                </p>
-                <div className="contactGitProfileCommitBox">
-                    <div className="contactGitProfileCommitBoxLeft">
-                        <span
-                            style={{ fontWeight: 600, color: "rgb(55, 58, 65)", paddingBottom: "5px", fontSize: "18px" }}
-                        >{msg}</span>
-                        <span style={{ fontWeight: 600 }}>{name}
-                            <span style={{ fontWeight: "normal", color: "rgb(90, 96, 105)" }}> {formatData(info)}</span>
-                        </span>
+            <Fade>
+                <div className="contactGitProfileCommitWrapper">
+                    <p style={{ fontSize: 30 }}>
+                        {lang === trans.lang[0] && (trans.contantGitTitle[0])}
+                        {lang === trans.lang[1] && (trans.contantGitTitle[1])}
+                    </p>
+                    <div className="contactGitProfileCommitBox">
+                        <div className="contactGitProfileCommitBoxLeft">
+                            <span
+                                style={{ fontWeight: 600, color: "rgb(55, 58, 65)", paddingBottom: "5px", fontSize: "18px" }}
+                            >{msg}</span>
+                            <span style={{ fontWeight: 600 }}>{name}
+                                <span style={{ fontWeight: "normal", color: "rgb(90, 96, 105)" }}> {formatData(info)}</span>
+                            </span>
+                        </div>
+                        <div className="contactGitProfileCommitBoxRight" onClick={() => window.open(url)}>C</div>
                     </div>
-                    <div className="contactGitProfileCommitBoxRight" onClick={() => window.open(url)}>C</div>
                 </div>
-            </div>
+            </Fade>
         );
     }
 
@@ -45,7 +50,7 @@ export default function ContactGitInfo() {
     if (data != null && state) {
         return (
             <div style={{ width: "50%" }}>
-                {displayLatest(data.commit.message, data.commit.author.name, data.commit.author.date, link)}
+                {displayLatest(data.commit.message ? data.commit.message : "", data.commit.author.name ? data.commit.author.name : "", data.commit.author.date ? data.commit.author.date : "", link ? link : undefined)}
             </div>
         )
     } else {

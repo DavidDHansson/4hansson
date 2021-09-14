@@ -20,8 +20,8 @@
         "Hej, Velkommen"
     ],
     "startTitelBes": [
-        "My name is David Hansson, and I’m 18 years old. My everyday life consists of school, where I’m currently in my third year, under the branch HTX. We have a focus on programming and technology on my line, which has always been one of my big passions since a young age. ",
-        "Mit navn er David Hansson og jeg er 18 år gammel. Til dagligt går jeg i 3.g, under grenen HTX. På min linje har vi fokus på programmering og teknologi, hvilket har været en af mine store passioner siden en ung alder."
+        "My name is David Domingo Hansson, and I’m 19 years old. I am currently taking a bachelor in software development at ITU. Programming and technology has always been one of my big passions since a young age.",
+        "Mit navn er David Domingo Hansson og jeg er 19 år gammel. Til dagligt går jeg på ITU hvor jeg tager en bachelor i softwareudvikling. Programmering og teknologi har altid været en af mine store passioner siden en ung alder."
     ],
     "skillsInfo": [
         "What can I do?",
@@ -62,13 +62,13 @@
             "Location",
             "Email",
             "Phone",
-            "LinkedIn"
+            "Work"
         ],
         [
-            "Lokalitet",
+            "Lokation",
             "Email",
             "Telefon",
-            "LinkedIn"
+            "Arbejde"
         ]
     ],
     "contactMainPhone": [
@@ -116,6 +116,14 @@
     "timeline": [
         [
             {
+                "title": "Bachelor of Science - BS, Software Development",
+                "subTitle": "1 - 6 Semesters • 18 - 21 Years Old",
+                "text": ["Started at ITU to get a BSc in Software development!"],
+                "date": "2021 - 2024",
+                "type": "school",
+                "links": [{"title": "ITU", "URL": "https://en.itu.dk/Programmes/BSc-Programmes/Software-Development"}]
+            },
+            {
                 "title": "Position at Tiimo",
                 "subTitle": "3.G • 18 Years Old",
                 "text": ["Frontend developer at Tiimo. Here I develop in the language Swift working on the wonderful app Tiimo."],
@@ -126,7 +134,7 @@
             {
                 "title": "Position at Listen To News",
                 "subTitle": "2.G • 16 Years Old",
-                "text": ["First positions as a developer! I joined the company Listen To news. Here I program Swift apps in Xcode. ", "With them, I have learned all about the startup environment and how it works."],
+                "text": ["First positions as a developer! I joined the company Listen To news. Here I programmed Swift apps in Xcode. ", "With them, I have learned all about the startup environment and how it works."],
                 "date": "Sep. 2019 - Oct. 2020",
                 "type": "work",
                 "links": [{"title": "LTN Website", "URL": "https://listentonews.com"}, {"title": "LTN LinkedIn", "URL": "https://www.linkedin.com/company/listen-to-news/"}]
@@ -165,6 +173,14 @@
             }
         ],
         [
+            {
+                "title": "Bachelor of Science - BS, Software Development",
+                "subTitle": "1 - 6 Semestre • 18 - 21 År Gammel",
+                "text": ["Begyndte på ITU for at få en BSc i Software udvikling!"],
+                "date": "2021 - 2024",
+                "type": "school",
+                "links": [{"title": "ITU", "URL": "https://itu.dk/Uddannelser/Bacheloruddannelser/Softwareudvikling"}]
+            },
             {
                 "title": "Stilling hos Tiimo",
                 "subTitle": "3.G • 18 År Gammel",

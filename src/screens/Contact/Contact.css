@@ -17,11 +17,11 @@
     flex-wrap: initial;
 }
 
-.contactMainTypeBes > a, .link {
+.contactMainTypeBes > div > a, .link {
     color: white;
 }
 
-.contactMainTypeBes > a:hover, .link:hover {
+.contactMainTypeBes > div > a:hover, .link:hover {
     color: #92dce5;
 }
 

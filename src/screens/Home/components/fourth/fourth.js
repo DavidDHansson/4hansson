@@ -1,6 +1,6 @@
 import React from "react";
 
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 import "./fourth.css";
 import Right from "./components/Right";
@@ -10,12 +10,12 @@ import log from "components/Log/Log";
 export default function Fourth() {
     return (
         <div className="fourthPar">
-            <Zoom onReveal={() => log({ site: "Home", section: "3"})}>
+            <Fade onReveal={() => log({ site: "Home", section: "3"})}>
                 <div className="fourthWrapper">
                     <Left />
                     <Right />
                 </div>
-            </Zoom>
+            </Fade>
         </div>
     );
 }

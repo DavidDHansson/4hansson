@@ -19,7 +19,7 @@ export default class Home extends React.Component {
                 <Fourth />
                 <Third />
                 <GuestBook />
-                <Twitter />
+                {/* <Twitter /> */}
                 <Footer />
             </div>
         );
